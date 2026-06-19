@@ -46,14 +46,28 @@ seu-projeto/
 ## Uso
 
 ```bash
-npx @igoruehara/spec-driven [diretório-alvo] [--force] [--yes]
+npx @igoruehara/spec-driven [diretório-alvo] [opções]
 ```
 
-- `diretório-alvo` — destino (padrão: diretório atual `.`)
-- `--force` — sobrescreve arquivos existentes (por padrão, mantém os que já existem)
-- `--yes`, `-y` — não pergunta confirmação
+### Exemplos
 
-Arquivos já existentes no destino são **mantidos** por padrão — seguro rodar em projeto em andamento.
+```bash
+npx @igoruehara/spec-driven                # scaffolda no diretório atual
+npx @igoruehara/spec-driven meu-projeto    # cria/usa a pasta ./meu-projeto
+npx @igoruehara/spec-driven . --force      # sobrescreve arquivos existentes
+npx @igoruehara/spec-driven . --yes        # sem confirmação (útil em automação)
+```
+
+### Opções
+
+| Argumento        | Padrão        | O que faz                                  |
+|------------------|---------------|--------------------------------------------|
+| `diretório-alvo` | `.` (atual)   | onde scaffoldar a estrutura                |
+| `--force`        | desligado     | sobrescreve arquivos que já existem        |
+| `--yes`, `-y`    | desligado     | pula a confirmação interativa              |
+
+> 🔒 **Seguro em projeto existente:** por padrão, arquivos que já existem são **mantidos** —
+> nada é sobrescrito sem `--force`. Antes de confirmar, a CLI mostra quais arquivos colidiriam.
 
 ## Depois de scaffoldar
 
