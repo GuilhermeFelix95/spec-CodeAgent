@@ -39,6 +39,8 @@
     "access": "public"
   },
   "scripts": {
-    "test:scaffold": "node bin/cli.mjs .tmp-scaffold-test --yes && echo OK"
+    "pack:check": "npm pack --dry-run",
+    "test:scaffold": "node bin/cli.mjs .tmp-scaffold-test --yes",
+    "prepublishOnly": "node bin/cli.mjs .tmp-scaffold-test --yes"
   }
 }
