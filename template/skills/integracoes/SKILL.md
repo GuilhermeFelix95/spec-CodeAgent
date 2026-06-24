@@ -87,3 +87,4 @@ ConexÃ£o validada **nÃ£o basta**: o resto da esteira precisa **saber** que e
 
 
 
+

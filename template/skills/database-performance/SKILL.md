@@ -1,4 +1,4 @@
----
+﻿---
 name: database-performance
 description: Use to optimize queries, indexes, latency, locks, and data access cost.
 ---
@@ -27,3 +27,4 @@ Use when the bottleneck is the database, a query, or data access patterns.
 - Do not optimize without evidence.
 - Do not trade correctness for speed.
 - Do not add indexes blindly.
+

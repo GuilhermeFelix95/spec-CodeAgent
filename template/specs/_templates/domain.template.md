@@ -37,3 +37,4 @@ alwaysApply: false
 Anti-Corruption Layer, Shared Kernel? Atualize `docs/architecture/context-map.md`.>
 
 
+

@@ -35,3 +35,4 @@ OfereÃ§a corrigir as triviais (frontmatter, links). NÃ£o invente conformidad
 > Esta skill Ã© o complemento humano/agente do gate de CI (`/setup-ci` roda o mesmo script).
 
 
+

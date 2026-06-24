@@ -30,3 +30,4 @@ alwaysApply: false
 - <premissa que, se falsa, invalida a entrega>
 
 
+

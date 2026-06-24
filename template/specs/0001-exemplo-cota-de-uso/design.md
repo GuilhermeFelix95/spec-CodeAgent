@@ -34,32 +34,32 @@ P2 no trimestre). Esta feature limita o uso por organizaÃ§Ã£o por janela de 
 |------------|--------------------------------------------------------|
 | Quota      | Limite mÃ¡ximo de requisiÃ§Ãµes de uma org por janela     |
 | Window     | Intervalo fixo em que o uso Ã© contado e zerado         |
-| Usage      | Contagem de requisiÃ§Ãµes da org na janela atual         |
+| Uso      | Contagem de requisiÃ§Ãµes da org na janela atual         |
 | Exceeded   | Estado em que `usage â‰¥ quota`                          |
 
 ## Design proposto
-Novo bounded context **Usage Metering** (supporting). Um value object `Quota` e o agregado
-`OrganizationUsage` mantÃªm a contagem por janela. Um middleware em `interfaces/` consulta o caso
+Novo bounded context **Uso Metering** (supporting). Um value object `Quota` e o agregado
+`OrganizationUso` mantÃªm a contagem por janela. Um middleware em `interfaces/` consulta o caso
 de uso `CheckQuota` antes de encaminhar para inferÃªncia. Contador em **Redis** (INCR + EXPIRE por
-janela) atrÃ¡s de uma porta `UsageCounter` definida no domÃ­nio â€” o domÃ­nio nÃ£o conhece Redis.
+janela) atrÃ¡s de uma porta `UsoCounter` definida no domÃ­nio â€” o domÃ­nio nÃ£o conhece Redis.
 
 ```
 [API edge] â†’ interfaces/middleware â†’ application/CheckQuota
-                                         â†’ domain/OrganizationUsage (regra)
-                                         â†’ infrastructure/RedisUsageCounter (porta)
+                                         â†’ domain/OrganizationUso (regra)
+                                         â†’ infrastructure/RedisUsoCounter (porta)
 ```
 
 ## Cobertura dos 5 eixos
 ### 1. Tech stack
 Introduz **Redis** como datastore do contador. Sem outras libs novas.
 ### 2. Arquitetura base
-Novo bounded context **Usage Metering** (supporting). Porta `UsageCounter` no domÃ­nio, adapter na
+Novo bounded context **Uso Metering** (supporting). Porta `UsoCounter` no domÃ­nio, adapter na
 infra â€” segue a regra de camadas. RelaÃ§Ã£o Customer/Supplier com o contexto Inference.
 ### 3. Infra
 Redis gerenciado (INCR/EXPIRE). Feature flag `usage_quota_enabled` por org. **Rollout:** shadow
 mode (conta, nÃ£o bloqueia) â†’ 5% â†’ 100%. **ReversÃ£o:** desligar a flag (efeito imediato).
 ### 4. Qualidade
-Unidade (invariantes de `Quota`/`UsageCount`); integraÃ§Ã£o (`RedisUsageCounter` com testcontainer);
+Unidade (invariantes de `Quota`/`UsoCount`); integraÃ§Ã£o (`RedisUsoCounter` com testcontainer);
 aceite (um teste por `AC-N`, incluindo fail-open). Gate de latÃªncia < 5ms.
 ### 5. Observabilidade
 MÃ©tricas `quota_checks_total`, `quota_exceeded_total{org}`, histograma de latÃªncia do check.
@@ -74,9 +74,9 @@ Alerta quando o fail-open ativar. SLO: p95 do check < 5ms.
 ## SoluÃ§Ã£o
 | #  | Tarefa / bloco                          | DescriÃ§Ã£o                              | Status      |
 |----|-----------------------------------------|----------------------------------------|-------------|
-| 1  | Value objects `Quota`/`Window`/`UsageCount` | invariantes do domÃ­nio              | definido    |
-| 2  | Agregado `OrganizationUsage` + eventos  | `QuotaExceeded` / `WindowReset`        | definido    |
-| 3  | Porta `UsageCounter` + `RedisUsageCounter` | INCR/EXPIRE por janela              | definido    |
+| 1  | Value objects `Quota`/`Window`/`UsoCount` | invariantes do domÃ­nio              | definido    |
+| 2  | Agregado `OrganizationUso` + eventos  | `QuotaExceeded` / `WindowReset`        | definido    |
+| 3  | Porta `UsoCounter` + `RedisUsoCounter` | INCR/EXPIRE por janela              | definido    |
 | 4  | Middleware na borda + `429`/`Retry-After` | gate antes da inferÃªncia             | definido    |
 | 5  | Fail-open + alerta                      | comportamento quando o Redis cai       | definido    |
 | 6  | Custo do Redis em alta escala           | dimensionar chaves/sharding            | indefinido  |
@@ -108,5 +108,6 @@ latÃªncia. Para cotas de proteÃ§Ã£o, Ã© aceitÃ¡vel.
 
 ## QuestÃµes em aberto
 - [ ] Janela fixa ou deslizante no MVP? â†’ **decidido: fixa** (registrar ADR-0002).
+
 
 

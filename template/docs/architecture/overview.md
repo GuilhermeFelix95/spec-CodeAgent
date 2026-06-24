@@ -40,3 +40,4 @@ conformidade (LGPD/GDPR/â€¦), gestÃ£o de segredos. DecisÃµes difÃ­ceis
 runbook de incidentes. Liga-se aos eixos Infra (3) e Observabilidade (5).>
 
 
+

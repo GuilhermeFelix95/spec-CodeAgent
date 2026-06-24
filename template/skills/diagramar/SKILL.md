@@ -45,3 +45,4 @@ nunca classes, tabelas ou detalhe de implementaÃ§Ã£o (isso Ã© escopo do `d
 - NÃ£o invente componentes que nÃ£o estÃ£o nos insumos â€” pergunte (ver verificaÃ§Ã£o de conhecimento no `AGENTS.md`).
 
 
+

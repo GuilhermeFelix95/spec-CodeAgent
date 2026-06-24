@@ -50,3 +50,4 @@ A sabatina **nÃ£o termina em chat**: consolide o resultado para alimentar a es
 - Aponte o prÃ³ximo passo de quem te chamou (preencher o gate, retomar `/nova-feature`, etc.).
 
 
+

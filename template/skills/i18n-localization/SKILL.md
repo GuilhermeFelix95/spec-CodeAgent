@@ -1,4 +1,4 @@
----
+﻿---
 name: i18n-localization
 description: Use to handle language, timezone, currency, regional formatting, and localized content.
 ---
@@ -27,3 +27,4 @@ Use when a product must work across languages, regions, or locale-specific rules
 - Do not assume one locale is representative.
 - Do not mix formatting rules across regions.
 - Do not bury localization in ad hoc code paths.
+

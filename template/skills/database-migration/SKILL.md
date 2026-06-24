@@ -16,3 +16,4 @@ Use quando a tarefa mexer em schema, query, desempenho de dados ou integridade.
 
 
 
+

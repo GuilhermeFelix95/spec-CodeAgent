@@ -64,3 +64,4 @@ responde 429 com headers de cota atÃ© a janela reiniciar.
 - ADR a criar: ADR-0002 (janela fixa vs deslizante)
 
 
+

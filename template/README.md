@@ -1,32 +1,32 @@
-# CodeAgent
+﻿# CodeAgent
 
-Spec-Driven Development for any coding agent or IDE.
+Spec-Driven Development para qualquer agente de codificação ou IDE.
 
-## What it delivers
+## O que entrega
 
-- `AGENTS.md` as the canonical project instruction file
-- `skills/` with reusable workflows
-- product, architecture, engineering, and spec docs
-- quality gates and session continuity
+- `AGENTS.md` como arquivo canônico de instruções do projeto
+- `skills/` com fluxos reutilizáveis
+- docs de produto, arquitetura, engenharia e specs
+- portões de qualidade e continuidade entre sessões
 
-## Core rule
+## Regra central
 
-`spec.md` is the contract, code implements, tests verify, and ADRs record durable decisions.
+`spec.md` é o contrato, o código implementa, os testes verificam e as ADRs registram decisões duráveis.
 
-## Operating standard
+## Padrão operacional
 
-The default instruction set prioritizes:
+O conjunto padrão de instruções prioriza:
 
-1. Safety
-2. Correctness
-3. Quality
-4. Performance
-5. Scalability
-6. Maintainability
-7. Simplicity
-8. Context/token efficiency
+1. Segurança
+2. Corretude
+3. Qualidade
+4. Desempenho
+5. Escalabilidade
+6. Manutenibilidade
+7. Simplicidade
+8. Eficiência de contexto/tokens
 
-## What is included
+## O que está incluso
 
 ```text
 seu-projeto/
@@ -40,7 +40,7 @@ seu-projeto/
 └── src/
 ```
 
-## Skills included
+## Skills incluídas
 
 - `kickoff`
 - `integracoes`
@@ -86,16 +86,16 @@ seu-projeto/
 - `pull-request`
 - `change-communication`
 
-## Usage
+## Uso
 
 ```bash
 npx @igoruehara/spec-driven
-npx @igoruehara/spec-driven my-project
+npx @igoruehara/spec-driven meu-projeto
 npx @igoruehara/spec-driven --agent=codex,cursor
 ```
 
-## Session standard
+## Padrão de sessão
 
-At the end of each session, sign as:
+Ao final de cada sessão, assine como:
 
 `Ass | CodeAgent`

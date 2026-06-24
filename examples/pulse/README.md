@@ -22,3 +22,4 @@ O **eval** mostra os 3 AC **cobertos por task e por teste (3/3)** e os testes pa
 o loop fechado, nÃ£o sÃ³ artefatos soltos.
 
 
+

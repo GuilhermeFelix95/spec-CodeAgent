@@ -36,3 +36,4 @@ alwaysApply: true
 - [ ] <hipÃ³tese cuja falsidade muda o produto>
 
 
+

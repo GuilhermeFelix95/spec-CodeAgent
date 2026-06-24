@@ -48,3 +48,4 @@ alwaysApply: false
 - Alerta de observabilidade â†’ resumo no Slack com link para a feature/spec.
 
 
+

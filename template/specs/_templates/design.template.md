@@ -103,3 +103,4 @@ contratos de API, modelo de dados. Mostre as fronteiras com os bounded contexts 
 > DecisÃµes difÃ­ceis de reverter tomadas aqui â†’ registre como ADR em `docs/architecture/adr/`.
 
 
+

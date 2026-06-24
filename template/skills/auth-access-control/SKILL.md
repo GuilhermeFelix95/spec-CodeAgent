@@ -1,4 +1,4 @@
----
+﻿---
 name: auth-access-control
 description: Use to design login, sessions, roles, permissions, authorization, and protected resources.
 ---
@@ -27,3 +27,4 @@ Use when a task touches identity, sessions, authorization, or access to sensitiv
 - Do not blur frontend hiding with real authorization.
 - Do not add privileged actions without explicit checks.
 - Do not leak security assumptions into unrelated layers.
+

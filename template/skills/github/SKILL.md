@@ -1,4 +1,4 @@
----
+﻿---
 name: github
 description: Use to work with GitHub repositories, issues, pull requests, reviews, checks, and metadata.
 ---
@@ -27,4 +27,5 @@ Use when the task involves GitHub as a hosting or collaboration layer.
 - Do not post outside the approved scope.
 - Do not assume a PR is ready without checks.
 - Do not mix review feedback with implementation tasks.
+
 

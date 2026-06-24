@@ -18,3 +18,4 @@ alwaysApply: false
 - **Gate:** `<comando de teste que prova que estÃ¡ pronto>` (ver `docs/engineering/TESTING.md`)
 
 
+

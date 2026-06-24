@@ -32,3 +32,4 @@ sÃ³ o que o cÃ³digo nÃ£o revela. Ã‰ **idempotente**: re-rodar atualiza 
 - Sozinha: sugira `/roadmap` (priorizar as dÃ­vidas mapeadas) ou `/camada-agentica`.
 
 
+

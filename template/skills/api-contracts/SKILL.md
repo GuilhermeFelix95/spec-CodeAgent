@@ -1,4 +1,4 @@
----
+﻿---
 name: api-contracts
 description: Use to define HTTP contracts, payloads, errors, versioning, and compatibility.
 ---
@@ -27,3 +27,4 @@ Use when the boundary between systems must be explicit and stable.
 - Do not change a contract casually.
 - Do not expose implementation details in the payload.
 - Do not leave error behavior ambiguous.
+

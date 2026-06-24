@@ -39,3 +39,4 @@ alwaysApply: false
 - [ ] `docs/STATE.md` atualizado (prÃ³ximo passo / decisÃµes)
 
 
+

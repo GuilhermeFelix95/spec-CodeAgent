@@ -117,3 +117,4 @@ if (errors.length) {
 console.log(`âœ“ ValidaÃ§Ã£o Mermaid: blocos OK (tipo, aspas, delimitadores).`);
 
 
+

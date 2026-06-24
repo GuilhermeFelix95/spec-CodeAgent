@@ -38,3 +38,4 @@ alwaysApply: false
 | <acreditamos queâ€¦>                | <mÃ©trica/sinal>       | <a preencher> |
 
 
+

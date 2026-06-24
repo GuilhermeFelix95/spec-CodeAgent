@@ -1,4 +1,4 @@
----
+﻿---
 name: deployment-ops
 description: Use to plan rollout, rollback, environments, flags, cutover, and production changes.
 ---
@@ -10,7 +10,7 @@ Use when a change affects release flow, environment promotion, or live operation
 ## When to use
 
 - Deploying new versions.
-- Planning canary or gradual rollout.
+- Planejamento canary or gradual rollout.
 - Managing cutover or migration windows.
 - Defining rollback or recovery behavior.
 
@@ -27,3 +27,4 @@ Use when a change affects release flow, environment promotion, or live operation
 - Do not deploy without a recovery path.
 - Do not mix release mechanics with business logic.
 - Do not assume the same rollout works for every environment.
+

@@ -34,3 +34,4 @@ Combine com `/revisar-pr` (gate humano/agente). Juntos cobrem **review + automa√
 os testes/cobertura/spec; o `/revisar-pr` garante a conformidade de processo no PR/MR.
 
 
+

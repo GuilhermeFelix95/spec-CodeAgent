@@ -1,4 +1,4 @@
----
+﻿---
 name: pull-request
 description: Use to prepare, review, and finalize pull requests with clear scope and verification.
 ---
@@ -27,4 +27,5 @@ Use when a change needs to be packaged for review and merge.
 - Do not hide unresolved work in the PR.
 - Do not mix unrelated refactors into feature work.
 - Do not skip validation before requesting review.
+
 

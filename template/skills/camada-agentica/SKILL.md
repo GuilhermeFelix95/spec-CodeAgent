@@ -28,3 +28,4 @@ tools, process, or domain, and generate only what was approved.
 - Unapproved items become roadmap candidates.
 - Do not add platform-specific assumptions unless the project actually uses them.
 
+

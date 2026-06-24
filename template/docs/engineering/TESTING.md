@@ -42,3 +42,4 @@ Mais a regra SDD: falhar PR que altera cÃ³digo sem spec aprovada.
 resultado de qualidade, que o `/metricas` consome para a tendÃªncia.>
 
 
+

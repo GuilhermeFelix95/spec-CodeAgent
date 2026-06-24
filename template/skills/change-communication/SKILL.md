@@ -1,4 +1,4 @@
----
+﻿---
 name: change-communication
 description: Use to explain changes, risks, rollout plans, and follow-up work to teammates or reviewers.
 ---
@@ -27,4 +27,5 @@ Use when you need to explain a change clearly to humans who will review, operate
 - Do not bury risk in vague language.
 - Do not overexplain unimportant details.
 - Do not omit operational follow-up when it matters.
+
 

@@ -42,3 +42,4 @@ flowchart TB
 <!-- (opcional) 4. Fluxo-chave: uma jornada crÃ­tica em sequenceDiagram. -->
 
 
+

@@ -1,4 +1,4 @@
----
+﻿---
 name: devex-bootstrap
 description: Use to improve project setup, scripts, local environment, onboarding, and entry points.
 ---
@@ -27,3 +27,4 @@ Use when the goal is to make the project easier to start, understand, and operat
 - Do not overbuild the setup.
 - Do not require hidden knowledge to start.
 - Do not break existing contributor workflows.
+

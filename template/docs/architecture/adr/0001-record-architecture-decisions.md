@@ -31,3 +31,4 @@ Usaremos **Architecture Decision Records** (formato Nygard) em `docs/architectur
 Ver `docs/architecture/adr/_template.md`.
 
 
+

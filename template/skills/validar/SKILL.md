@@ -28,3 +28,4 @@ Veredito claro: **pronto para merge** ou a lista do que falta (AC sem cobertura,
 item de DoD pendente). Se hÃ¡ MCP de escrita validado, ofereÃ§a atualizar a issue/pÃ¡gina da feature.
 
 
+

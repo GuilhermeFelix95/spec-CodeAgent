@@ -33,3 +33,4 @@ Os diagramas de arquitetura de alto nÃ­vel (contexto C4, containers, mapa de c
 [`diagrams.md`](./diagrams.md) â€” gere/atualize com a skill `/diagramar`.
 
 
+

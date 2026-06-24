@@ -1,4 +1,4 @@
----
+﻿---
 name: testing-e2e
 description: Use to validate critical user journeys, smoke tests, and end-to-end flows.
 ---
@@ -27,3 +27,4 @@ Use when you need to verify the system from the user's perspective or through in
 - Do not use E2E for every assertion.
 - Do not build tests around brittle selectors or unstable timing.
 - Do not let E2E duplicate lower-level coverage.
+

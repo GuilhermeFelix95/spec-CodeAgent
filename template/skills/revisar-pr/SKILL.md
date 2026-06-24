@@ -32,3 +32,4 @@ skill verifica se a mudanÃ§a respeita a esteira SDD antes do merge. As duas se
 - Sugira rodar `/code-review` (harness) para a camada de bugs/qualidade.
 
 
+

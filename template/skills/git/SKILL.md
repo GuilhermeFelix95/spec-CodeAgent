@@ -1,4 +1,4 @@
----
+﻿---
 name: git
 description: Use to manage branches, commits, diffs, history, merges, and safe local repository work.
 ---
@@ -27,4 +27,5 @@ Use when the task involves repository history or local version control operation
 - Do not rewrite history casually.
 - Do not discard unowned changes.
 - Do not mix unrelated work in one commit.
+
 

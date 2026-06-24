@@ -1,4 +1,4 @@
----
+﻿---
 name: product-analytics
 description: Use to define events, funnels, product metrics, experiments, and business observability.
 ---
@@ -27,3 +27,4 @@ Use when a change needs measurable product impact or behavioral insight.
 - Do not collect data without a purpose.
 - Do not duplicate events across layers.
 - Do not ignore consent or retention constraints.
+

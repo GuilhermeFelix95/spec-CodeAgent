@@ -38,3 +38,4 @@ e indiretamente todas que dividem a infraestrutura.
   o modelo de domÃ­nio muda.
 
 
+

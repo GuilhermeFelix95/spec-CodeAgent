@@ -1,7 +1,7 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 // Auditoria da esteira SDD: valida estrutura, frontmatter, links e specs.
 // Uso: node scripts/audit-esteira.mjs [dir]   (default: ".")
-// Sai com código 1 se houver violação.
+// Sai com cÃ³digo 1 se houver violaÃ§Ã£o.
 
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname, relative, resolve, extname } from "node:path";
@@ -53,10 +53,10 @@ for (const f of files) {
   if (!fm.name) err(f, "frontmatter sem `name`");
   if (!fm.description) err(f, "frontmatter sem `description`");
   if (isSkillDialect(f)) {
-    if ("alwaysApply" in fm) err(f, "dialeto skill não deve ter `alwaysApply`");
+    if ("alwaysApply" in fm) err(f, "dialeto skill nÃ£o deve ter `alwaysApply`");
   } else {
     if (!("alwaysApply" in fm)) err(f, "doc sem `alwaysApply`");
-    else if (!/^(true|false)$/.test(fm.alwaysApply)) err(f, `alwaysApply inválido: ${fm.alwaysApply}`);
+    else if (!/^(true|false)$/.test(fm.alwaysApply)) err(f, `alwaysApply invÃ¡lido: ${fm.alwaysApply}`);
   }
 }
 
@@ -70,7 +70,7 @@ for (const f of files) {
     if (/[<>]|XXXX|NNNN|\s/.test(target)) continue;
     target = target.split("#")[0];
     if (!target) continue;
-    if (!existsSync(resolve(dirname(f), target))) err(f, `link quebrado → ${target}`);
+    if (!existsSync(resolve(dirname(f), target))) err(f, `link quebrado â†’ ${target}`);
   }
 }
 
@@ -84,10 +84,11 @@ if (existsSync(specsDir)) {
 }
 
 if (errors.length) {
-  console.error(`\n✗ Auditoria da esteira: ${errors.length} problema(s)\n`);
-  for (const e of errors) console.error(`  • ${e}`);
+  console.error(`\nâœ— Auditoria da esteira: ${errors.length} problema(s)\n`);
+  for (const e of errors) console.error(`  â€¢ ${e}`);
   console.error("");
   process.exit(1);
 } else {
-  console.log(`✓ Auditoria da esteira: ${files.length} docs OK (frontmatter, links, specs).`);
+  console.log(`âœ“ Auditoria da esteira: ${files.length} docs OK (frontmatter, links, specs).`);
 }
+

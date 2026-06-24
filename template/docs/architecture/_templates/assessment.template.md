@@ -65,3 +65,4 @@ Alimenta o `docs/engineering/TESTING.md`.>
 - [ ] <ex.: "uso de X como banco" â€” por que foi escolhido, se ainda se sustenta>
 
 
+

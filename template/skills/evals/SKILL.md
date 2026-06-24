@@ -26,3 +26,4 @@ Score por feature + os gaps. Complementa o `/validar` (UAT de uma feature) com u
 **fidelidade do portfÃ³lio**. O mesmo eval roda na CI (`esteira.yml`) â€” aqui Ã© o complemento com julgamento.
 
 
+

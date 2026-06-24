@@ -79,3 +79,4 @@ ApÃ³s a implementaÃ§Ã£o (pode ser em outra sessÃ£o), rode a skill **`/va
 atualiza `docs/STATE.md`. Encerre com `/handoff` se for pausar.
 
 
+

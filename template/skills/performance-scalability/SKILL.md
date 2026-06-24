@@ -16,3 +16,4 @@ Use quando a tarefa afetar latÃªncia, throughput, carga, custo ou crescimento 
 
 
 
+

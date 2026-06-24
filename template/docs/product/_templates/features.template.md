@@ -27,3 +27,4 @@ alwaysApply: false
 > Os itens da **Onda 1** viram o `roadmap.md` (horizonte "Agora") e specs via `/nova-feature`.
 
 
+

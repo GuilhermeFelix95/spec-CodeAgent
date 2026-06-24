@@ -60,3 +60,4 @@ alwaysApply: false
 | DuplicaÃ§Ã£o                | <n>      | â€”           | <â†‘ / â†’ / â†“> |
 
 
+

@@ -1,4 +1,4 @@
----
+﻿---
 name: data-modeling
 description: Use to model entities, relationships, cardinality, normalization, and persistence trade-offs.
 ---
@@ -27,3 +27,4 @@ Use when a change affects the shape of data or how it is stored, queried, and ev
 - Do not model for the current query only if it creates long-term friction.
 - Do not add fields without a durable reason.
 - Do not hide ownership or lifecycle in ambiguous tables.
+

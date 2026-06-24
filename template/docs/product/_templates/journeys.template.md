@@ -27,3 +27,4 @@ alwaysApply: false
 > Visual opcional: gere o fluxo de uma jornada em Mermaid (`sequenceDiagram`) com `/diagramar`.
 
 
+

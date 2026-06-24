@@ -31,3 +31,4 @@ alwaysApply: true
 - [ ] <tarefa que nÃ£o cabe ainda numa spec>
 
 
+

@@ -16,3 +16,4 @@ Use quando houver falha, degradaÃ§Ã£o, outage ou risco operacional ativo.
 
 
 
+

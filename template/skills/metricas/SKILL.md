@@ -61,3 +61,4 @@ SenÃ£o, use `git log`/tags locais e os comandos do `TESTING.md`, e peÃ§a os 
 > Olhe a **tendÃªncia**, nÃ£o o nÃºmero isolado.
 
 
+
