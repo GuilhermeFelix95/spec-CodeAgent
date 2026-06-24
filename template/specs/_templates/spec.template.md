@@ -1,58 +1,60 @@
----
+﻿---
 name: spec
-description: Contrato da feature (critérios de aceite). Base enquanto a feature está ativa.
+description: Contrato da feature (critÃ©rios de aceite). Base enquanto a feature estÃ¡ ativa.
 alwaysApply: true
 ---
 
-# Spec — <nome da feature>
+# Spec â€” <nome da feature>
 
 > **Fonte da verdade.** Status: rascunho | em review | aprovado | implementado
-> Os critérios de aceite são (a) o contrato com o negócio, (b) o oráculo de teste,
-> (c) o prompt para o agente de IA implementar. Escreva-os para serem executáveis.
+> Os critÃ©rios de aceite sÃ£o (a) o contrato com o negÃ³cio, (b) o orÃ¡culo de teste,
+> (c) o prompt para o agente de IA implementar. Escreva-os para serem executÃ¡veis.
 
 ## Resumo
-<Uma frase: o que o sistema passará a fazer.>
+<Uma frase: o que o sistema passarÃ¡ a fazer.>
 
-## Critérios de aceite
-> Formato Given/When/Then. Cada critério deve ser testável e não-ambíguo.
-> **Cada `AC-N` é um ID rastreável:** ele reaparece em `tasks.md` (coluna "Cobre AC"), no teste
-> de aceite que o valida e na mensagem de commit. Não renumere ACs já implementados.
+## CritÃ©rios de aceite
+> Formato Given/When/Then. Cada critÃ©rio deve ser testÃ¡vel e nÃ£o-ambÃ­guo.
+> **Cada `AC-N` Ã© um ID rastreÃ¡vel:** ele reaparece em `tasks.md` (coluna "Cobre AC"), no teste
+> de aceite que o valida e na mensagem de commit. NÃ£o renumere ACs jÃ¡ implementados.
 
-### AC-1: <título do cenário>
-- **Dado** <estado/pré-condição>
-- **Quando** <ação/evento>
-- **Então** <resultado observável e verificável>
+### AC-1: <tÃ­tulo do cenÃ¡rio>
+- **Dado** <estado/prÃ©-condiÃ§Ã£o>
+- **Quando** <aÃ§Ã£o/evento>
+- **EntÃ£o** <resultado observÃ¡vel e verificÃ¡vel>
 
-### AC-2: <título>
-- **Dado** …
-- **Quando** …
-- **Então** …
+### AC-2: <tÃ­tulo>
+- **Dado** â€¦
+- **Quando** â€¦
+- **EntÃ£o** â€¦
 
-## Matriz de decisão (opcional)
-> Use **quando a regra combina vários fatores** (flags, estados, papéis, modos). Uma tabela-verdade
-> é mais densa, menos ambígua e mais barata em tokens que a mesma regra em prosa — e **cada linha
-> vira um caso de teste**. Os fatores são colunas; a última coluna é o resultado observável.
-> Ligue cada linha ao `AC-N` que ela detalha (a coluna "AC" mantém a rastreabilidade).
-> Nem tudo cabe numa matriz: fluxo temporal e sequência ficam melhor em Given/When/Then acima.
+## Matriz de decisÃ£o (opcional)
+> Use **quando a regra combina vÃ¡rios fatores** (flags, estados, papÃ©is, modos). Uma tabela-verdade
+> Ã© mais densa, menos ambÃ­gua e mais barata em tokens que a mesma regra em prosa â€” e **cada linha
+> vira um caso de teste**. Os fatores sÃ£o colunas; a Ãºltima coluna Ã© o resultado observÃ¡vel.
+> Ligue cada linha ao `AC-N` que ela detalha (a coluna "AC" mantÃ©m a rastreabilidade).
+> Nem tudo cabe numa matriz: fluxo temporal e sequÃªncia ficam melhor em Given/When/Then acima.
 
-| Fator A | Fator B | … | Resultado esperado | AC |
+| Fator A | Fator B | â€¦ | Resultado esperado | AC |
 |---------|---------|---|--------------------|------|
-| <valor> | <valor> | … | <ação observável>  | AC-1 |
-| <valor> | <valor> | … | <ação observável>  | AC-2 |
+| <valor> | <valor> | â€¦ | <aÃ§Ã£o observÃ¡vel>  | AC-1 |
+| <valor> | <valor> | â€¦ | <aÃ§Ã£o observÃ¡vel>  | AC-2 |
 
-> Cubra **todas as combinações relevantes** (inclusive as "impossíveis" que devem ser rejeitadas).
-> `—` = fator irrelevante naquela linha. Linha sem `AC` → provavelmente falta um critério de aceite.
+> Cubra **todas as combinaÃ§Ãµes relevantes** (inclusive as "impossÃ­veis" que devem ser rejeitadas).
+> `â€”` = fator irrelevante naquela linha. Linha sem `AC` â†’ provavelmente falta um critÃ©rio de aceite.
 
 ## Casos de borda e erros
-- <entrada inválida → comportamento esperado>
-- <concorrência, timeout, falha de dependência → comportamento esperado>
+- <entrada invÃ¡lida â†’ comportamento esperado>
+- <concorrÃªncia, timeout, falha de dependÃªncia â†’ comportamento esperado>
 
 ## Fora de escopo
-> Vinculante. Não implemente nada aqui.
-- <…>
+> Vinculante. NÃ£o implemente nada aqui.
+- <â€¦>
 
 ## Rastreabilidade
 - Product: `./product.md`
 - Design: `./design.md` (se tier arquitetural)
-- Domínio: `./domain.md`
+- DomÃ­nio: `./domain.md`
 - ADRs relacionados: <links>
+
+

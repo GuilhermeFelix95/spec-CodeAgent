@@ -1,48 +1,50 @@
----
+﻿---
 name: integrations
 description: Ferramentas do time e MCPs. Puxe ao integrar Jira/Confluence/cloud.
 alwaysApply: false
 ---
 
-# Integrações e MCPs — <nome do projeto>
+# IntegraÃ§Ãµes e MCPs â€” <nome do projeto>
 
-> Ferramentas que o time já usa e os **MCP servers** propostos para conectá-las ao Claude Code,
+> Ferramentas que o time jÃ¡ usa e os **MCP servers** propostos para conectÃ¡-las ao agent,
 > ajudando a **rodar, documentar e integrar** sem sair do fluxo. Gerado no kickoff.
 
 ## Ferramentas do time
-| Categoria          | Ferramenta            | Processo / observação            |
+| Categoria          | Ferramenta            | Processo / observaÃ§Ã£o            |
 |--------------------|-----------------------|----------------------------------|
-| Gestão de projeto  | <Jira/Trello/Linear>  | <Scrum / Kanban / Waterfall>     |
-| Documentação       | <Confluence/Notion/Evernote> | <onde mora a doc viva>    |
-| Código & CI        | <GitHub/GitLab/Bitbucket> | <fluxo de PR/MR>             |
-| Cloud              | <AWS/GCP/Azure>       | <regiões, contas>                |
+| GestÃ£o de projeto  | <Jira/Trello/Linear>  | <Scrum / Kanban / Waterfall>     |
+| DocumentaÃ§Ã£o       | <Confluence/Notion/Evernote> | <onde mora a doc viva>    |
+| CÃ³digo & CI        | <GitHub/GitLab/Bitbucket> | <fluxo de PR/MR>             |
+| Cloud              | <AWS/GCP/Azure>       | <regiÃµes, contas>                |
 | Observabilidade    | <Datadog/Sentry/Grafana> | <onde os alertas chegam>      |
-| Comunicação        | <Slack/Teams>         | <canal de alertas/incidentes>    |
+| ComunicaÃ§Ã£o        | <Slack/Teams>         | <canal de alertas/incidentes>    |
 
 ## MCPs propostos
 > Verifique o nome/disponibilidade atual de cada servidor na doc oficial antes de configurar.
-> **Conta/workspace** é o destino validado da conexão — confirme que é o do projeto (não o pessoal).
+> **Conta/workspace** Ã© o destino validado da conexÃ£o â€” confirme que Ã© o do projeto (nÃ£o o pessoal).
 
 | Ferramenta        | MCP server (proposto)        | Conta/workspace (validada) | O que habilita                       | Status   |
 |-------------------|------------------------------|----------------------------|--------------------------------------|----------|
-| Jira / Confluence | Atlassian (oficial)          | <workspace do projeto>     | ler/criar issues e páginas; sync     | proposto |
-| Notion            | Notion (oficial)             | <business, não pessoal>    | publicar vision/roadmap; buscar docs | proposto |
+| Jira / Confluence | Atlassian (oficial)          | <workspace do projeto>     | ler/criar issues e pÃ¡ginas; sync     | proposto |
+| Notion            | Notion (oficial)             | <business, nÃ£o pessoal>    | publicar vision/roadmap; buscar docs | proposto |
 | GitHub            | GitHub (oficial)             | <org/repo>                 | PRs, issues, code review, releases   | proposto |
 | GitLab            | GitLab (oficial/community)   | <grupo/projeto>            | MRs, issues, pipelines               | proposto |
 | AWS               | AWS Labs MCP                 | <conta/perfil>             | consultar recursos, custos, docs     | proposto |
 | GCP               | Google Cloud MCP / Toolbox   | <projeto>                  | recursos, dados                      | proposto |
 | Azure             | Azure MCP (oficial)          | <subscription>             | recursos, deploy                     | proposto |
-| Sentry / Datadog  | Sentry / Datadog MCP         | <org>                      | erros, métricas, alertas no contexto | proposto |
+| Sentry / Datadog  | Sentry / Datadog MCP         | <org>                      | erros, mÃ©tricas, alertas no contexto | proposto |
 | Slack             | Slack MCP                    | <workspace/canal>          | notificar status/alertas ao time     | proposto |
-| Libs / APIs       | Context7 MCP                 | (público)                  | lookup de libs na verificação de conhecimento (`CLAUDE.md`) | proposto |
+| Libs / APIs       | Context7 MCP                 | (pÃºblico)                  | lookup de libs na verificaÃ§Ã£o de conhecimento (`AGENTS.md`) | proposto |
 
 ## Como conectar (resumo)
-- **Project-scoped:** `.mcp.json` na raiz do repo — compartilhável com o time. **Sem segredos.**
-- **Segredos:** via variável de ambiente ou `claude mcp add`. **Nunca** commitar tokens.
+- **Project-scoped:** `.mcp.json` na raiz do repo â€” compartilhÃ¡vel com o time. **Sem segredos.**
+- **Segredos:** via variÃ¡vel de ambiente ou `mcp add`. **Nunca** commitar tokens.
 - Servidores remotos/hosted (`type: http`) costumam usar OAuth; locais usam `command`+`args`.
 
 ## Fluxos que isso destrava
-- Spec aprovada em `specs/NNNN/` → abre/atualiza issue no Jira/Linear.
-- `vision.md` / `roadmap.md` → publica/atualiza no Notion/Confluence.
-- ADR novo → comenta no PR do GitHub/GitLab.
-- Alerta de observabilidade → resumo no Slack com link para a feature/spec.
+- Spec aprovada em `specs/NNNN/` â†’ abre/atualiza issue no Jira/Linear.
+- `vision.md` / `roadmap.md` â†’ publica/atualiza no Notion/Confluence.
+- ADR novo â†’ comenta no PR do GitHub/GitLab.
+- Alerta de observabilidade â†’ resumo no Slack com link para a feature/spec.
+
+

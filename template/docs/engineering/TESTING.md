@@ -1,42 +1,44 @@
----
+﻿---
 name: TESTING
-description: Comandos de gate e convenções de teste. Puxe ao codar, validar ou montar CI.
+description: Comandos de gate e convenÃ§Ãµes de teste. Puxe ao codar, validar ou montar CI.
 alwaysApply: false
 ---
 
-# TESTING — Como verificar o projeto
+# TESTING â€” Como verificar o projeto
 
-> **Fonte única dos comandos de gate** e das convenções de teste. É o que o **DoD**, a **CI** e os
-> **subagentes** consomem para provar que uma task/feature está pronta — sem inspeção visual.
+> **Fonte Ãºnica dos comandos de gate** e das convenÃ§Ãµes de teste. Ã‰ o que o **DoD**, a **CI** e os
+> **subagentes** consomem para provar que uma task/feature estÃ¡ pronta â€” sem inspeÃ§Ã£o visual.
 > Preenchido no kickoff (eixo Qualidade) e mantido vivo.
 
 ## Como rodar
-| Nível         | Comando                   | Quando |
+| NÃ­vel         | Comando                   | Quando |
 |---------------|---------------------------|--------|
-| Unidade       | `<comando>`               | sempre, rápido |
-| Integração    | `<comando>`               | adapters / repos / contratos |
+| Unidade       | `<comando>`               | sempre, rÃ¡pido |
+| IntegraÃ§Ã£o    | `<comando>`               | adapters / repos / contratos |
 | Aceite (UAT)  | `<comando>`               | um teste por `AC-N` da spec |
-| Lint / format    | `<comando>`               | pré-commit / CI |
-| Análise estática | `<comando>` (type-check, complexidade, SAST) | CI — sem findings bloqueantes |
-| Cobertura        | `<comando>` (mín. `<X>%`, gera relatório) | CI — relatório anexado ao PR |
+| Lint / format    | `<comando>`               | prÃ©-commit / CI |
+| AnÃ¡lise estÃ¡tica | `<comando>` (type-check, complexidade, SAST) | CI â€” sem findings bloqueantes |
+| Cobertura        | `<comando>` (mÃ­n. `<X>%`, gera relatÃ³rio) | CI â€” relatÃ³rio anexado ao PR |
 
-## Convenções
-- Pirâmide: muitos testes de unidade, menos de integração, poucos de aceite.
-- **Cada `AC-N` da spec tem um teste de aceite que é o seu gate.** Nomeie o teste com o ID
-  (`test_AC_1_*` / `AC-1: ...`) para rastreabilidade spec → teste.
-- Domínio não sobe infra; integração usa `<testcontainer / mock de borda>`.
-- **Análise estática** (escolha por stack): type-check (`<mypy/tsc/…>`), complexidade/smells e
-  **SAST/segurança** (`<sonar/codeql/semgrep/…>`). Define o que é **bloqueante** (barra o merge)
-  vs **aviso** (entra como tendência em `metrics.md`, não bloqueia).
+## ConvenÃ§Ãµes
+- PirÃ¢mide: muitos testes de unidade, menos de integraÃ§Ã£o, poucos de aceite.
+- **Cada `AC-N` da spec tem um teste de aceite que Ã© o seu gate.** Nomeie o teste com o ID
+  (`test_AC_1_*` / `AC-1: ...`) para rastreabilidade spec â†’ teste.
+- DomÃ­nio nÃ£o sobe infra; integraÃ§Ã£o usa `<testcontainer / mock de borda>`.
+- **AnÃ¡lise estÃ¡tica** (escolha por stack): type-check (`<mypy/tsc/â€¦>`), complexidade/smells e
+  **SAST/seguranÃ§a** (`<sonar/codeql/semgrep/â€¦>`). Define o que Ã© **bloqueante** (barra o merge)
+  vs **aviso** (entra como tendÃªncia em `metrics.md`, nÃ£o bloqueia).
 
-## Gates (Definition of Done executável)
-- Uma **task** só vira `done` quando o **Gate (comando)** dela em `tasks.md` passa.
-- Uma **feature** só faz merge quando todos os AC estão verdes + lint + **análise estática limpa**
-  (sem findings bloqueantes) + cobertura mínima.
-- A **CI roda exatamente estes comandos** — falhar bloqueia o merge.
+## Gates (Definition of Done executÃ¡vel)
+- Uma **task** sÃ³ vira `done` quando o **Gate (comando)** dela em `tasks.md` passa.
+- Uma **feature** sÃ³ faz merge quando todos os AC estÃ£o verdes + lint + **anÃ¡lise estÃ¡tica limpa**
+  (sem findings bloqueantes) + cobertura mÃ­nima.
+- A **CI roda exatamente estes comandos** â€” falhar bloqueia o merge.
 
 ## O que a CI executa
-<Pipeline em ordem: lint → análise estática → unidade → integração → aceite → cobertura (relatório).
-Mais a regra SDD: falhar PR que altera código sem spec aprovada.
-**Cobertura e análise estática são publicadas como artefatos do PR** — evidência rastreável do
-resultado de qualidade, que o `/metricas` consome para a tendência.>
+<Pipeline em ordem: lint â†’ anÃ¡lise estÃ¡tica â†’ unidade â†’ integraÃ§Ã£o â†’ aceite â†’ cobertura (relatÃ³rio).
+Mais a regra SDD: falhar PR que altera cÃ³digo sem spec aprovada.
+**Cobertura e anÃ¡lise estÃ¡tica sÃ£o publicadas como artefatos do PR** â€” evidÃªncia rastreÃ¡vel do
+resultado de qualidade, que o `/metricas` consome para a tendÃªncia.>
+
+

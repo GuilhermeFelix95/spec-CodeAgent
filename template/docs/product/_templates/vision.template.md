@@ -1,36 +1,38 @@
----
+﻿---
 name: vision
-description: Visão do produto — problema, personas, North Star.
+description: VisÃ£o do produto â€” problema, personas, North Star.
 alwaysApply: true
 ---
 
-# Visão do Produto — <nome do projeto>
+# VisÃ£o do Produto â€” <nome do projeto>
 
-> Gerado no kickoff (Lean Inception). Documento vivo: revisar a cada pivô relevante.
+> Gerado no kickoff (Lean Inception). Documento vivo: revisar a cada pivÃ´ relevante.
 
 ## Elevator pitch
-> Para **<cliente-alvo>** que **<necessidade/problema>**, o **<produto>** é um
-> **<categoria>** que **<benefício-chave / razão de existir>**.
+> Para **<cliente-alvo>** que **<necessidade/problema>**, o **<produto>** Ã© um
+> **<categoria>** que **<benefÃ­cio-chave / razÃ£o de existir>**.
 > Diferente de **<principal alternativa>**, o nosso produto **<diferencial>**.
 
-## O produto É / NÃO É / FAZ / NÃO FAZ
-| É                          | NÃO É                       |
+## O produto Ã‰ / NÃƒO Ã‰ / FAZ / NÃƒO FAZ
+| Ã‰                          | NÃƒO Ã‰                       |
 |----------------------------|-----------------------------|
-| <…>                        | <…>                         |
+| <â€¦>                        | <â€¦>                         |
 
-| FAZ                        | NÃO FAZ                     |
+| FAZ                        | NÃƒO FAZ                     |
 |----------------------------|-----------------------------|
-| <…>                        | <…>                         |
+| <â€¦>                        | <â€¦>                         |
 
 ## Personas
-| Persona     | Quem é / contexto             | Dor principal            | O que espera do produto |
+| Persona     | Quem Ã© / contexto             | Dor principal            | O que espera do produto |
 |-------------|-------------------------------|--------------------------|-------------------------|
-| <Nome>      | <…>                           | <…>                      | <…>                     |
+| <Nome>      | <â€¦>                           | <â€¦>                      | <â€¦>                     |
 
 ## North Star / objetivo
-- **North Star metric:** <a métrica que prova valor entregue ao usuário>
-- **Baseline → Alvo:** <hoje> → <meta> em <horizonte>
-- **Objetivos de negócio:** <…>
+- **North Star metric:** <a mÃ©trica que prova valor entregue ao usuÃ¡rio>
+- **Baseline â†’ Alvo:** <hoje> â†’ <meta> em <horizonte>
+- **Objetivos de negÃ³cio:** <â€¦>
 
-## Premissas e hipóteses a validar
-- [ ] <hipótese cuja falsidade muda o produto>
+## Premissas e hipÃ³teses a validar
+- [ ] <hipÃ³tese cuja falsidade muda o produto>
+
+

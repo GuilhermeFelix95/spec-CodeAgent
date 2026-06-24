@@ -1,22 +1,24 @@
----
+﻿---
 name: pulse-example
-description: Golden example — produto fictício levado pela esteira ponta a ponta (prova do fluxo).
+description: Golden example â€” produto fictÃ­cio levado pela esteira ponta a ponta (prova do fluxo).
 alwaysApply: false
 ---
 
-# Exemplo golden — Pulse
+# Exemplo golden â€” Pulse
 
-Produto fictício (widget de feedback in-app) construído **com a própria esteira** para provar o
-fluxo ponta a ponta: **discovery** (vision/features) → **spec** (critérios de aceite) → **tasks**
-→ **implementação** → **testes** → **eval**.
+Produto fictÃ­cio (widget de feedback in-app) construÃ­do **com a prÃ³pria esteira** para provar o
+fluxo ponta a ponta: **discovery** (vision/features) â†’ **spec** (critÃ©rios de aceite) â†’ **tasks**
+â†’ **implementaÃ§Ã£o** â†’ **testes** â†’ **eval**.
 
-Rode da raiz do repositório:
+Rode da raiz do repositÃ³rio:
 
 ```bash
 node template/scripts/audit-esteira.mjs examples/pulse        # conformidade estrutural
-node template/scripts/eval-spec-fidelity.mjs examples/pulse   # fidelidade spec→código
+node template/scripts/eval-spec-fidelity.mjs examples/pulse   # fidelidade specâ†’cÃ³digo
 node --test examples/pulse/src/                               # os testes passam
 ```
 
-O **eval** mostra os 3 AC **cobertos por task e por teste (3/3)** e os testes passam de verdade —
-o loop fechado, não só artefatos soltos.
+O **eval** mostra os 3 AC **cobertos por task e por teste (3/3)** e os testes passam de verdade â€”
+o loop fechado, nÃ£o sÃ³ artefatos soltos.
+
+

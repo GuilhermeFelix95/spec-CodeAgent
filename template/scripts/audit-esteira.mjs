@@ -1,25 +1,20 @@
 #!/usr/bin/env node
-// Auditoria da esteira SDD — valida estrutura, frontmatter, links e specs.
+// Auditoria da esteira SDD: valida estrutura, frontmatter, links e specs.
 // Uso: node scripts/audit-esteira.mjs [dir]   (default: ".")
-// Sai com código 1 se houver violação (serve de gate na CI e no /auditar).
+// Sai com código 1 se houver violação.
 
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname, relative, resolve, extname } from "node:path";
 
 const ROOT = resolve(process.argv[2] || ".");
-// Dirs de views geradas pela CLI (clientes não-Claude) — são artefatos derivados da fonte
-// canônica (.claude/CLAUDE.md), não a fonte; auditar a fonte basta e evita falso-positivo.
-const IGNORE_DIRS = new Set([
-  "node_modules", ".git", ".spec-driven",
-  ".agents", ".cursor", ".gemini", ".windsurf",
-]);
+const IGNORE_DIRS = new Set(["node_modules", ".git", ".spec-driven", ".agents", ".cursor", ".gemini", ".windsurf"]);
 const NO_FRONTMATTER_OK = new Set(["RELEASING.md", "CHANGELOG.md"]);
-// Arquivos de instruções gerados (fora de um dir próprio) que também são views derivadas.
+
 const isGenerated = (f) => {
   const r = relative(ROOT, f).replace(/\\/g, "/");
-  return r === "AGENTS.md" || r === "GEMINI.md" ||
-    r === ".github/copilot-instructions.md" || r.startsWith(".github/prompts/");
+  return r === "AGENTS.md" || r === "GEMINI.md" || r === ".github/copilot-instructions.md" || r.startsWith(".github/prompts/");
 };
+
 const errors = [];
 const err = (file, msg) => errors.push(`${relative(ROOT, file) || file}: ${msg}`);
 
@@ -47,13 +42,9 @@ function parseFrontmatter(text) {
   return keys;
 }
 
-const isSkillDialect = (f) =>
-  f.replace(/\\/g, "/").includes("/.claude/skills/") ||
-  /(?:^|\/)(skill|subagent)\.template\.md$/.test(f.replace(/\\/g, "/"));
-
+const isSkillDialect = (f) => f.replace(/\\/g, "/").includes("/skills/") || /(?:^|\/)(skill|subagent)\.template\.md$/.test(f.replace(/\\/g, "/"));
 const files = walk(ROOT).filter((f) => !isGenerated(f));
 
-// 1) Frontmatter + dialeto
 for (const f of files) {
   if (NO_FRONTMATTER_OK.has(f.split(/[\\/]/).pop())) continue;
   const text = readFileSync(f, "utf8");
@@ -69,7 +60,6 @@ for (const f of files) {
   }
 }
 
-// 2) Links relativos quebrados
 const linkRe = /\]\(([^)]+)\)/g;
 for (const f of files) {
   const text = readFileSync(f, "utf8");
@@ -77,23 +67,22 @@ for (const f of files) {
   while ((m = linkRe.exec(text))) {
     let target = m[1].trim();
     if (/^(https?:|mailto:|#)/.test(target)) continue;
-    if (/[<>]|XXXX|NNNN|\s/.test(target)) continue; // placeholders
+    if (/[<>]|XXXX|NNNN|\s/.test(target)) continue;
     target = target.split("#")[0];
     if (!target) continue;
     if (!existsSync(resolve(dirname(f), target))) err(f, `link quebrado → ${target}`);
   }
 }
 
-// 3) Toda pasta specs/NNNN-* precisa de spec.md
 const specsDir = join(ROOT, "specs");
 if (existsSync(specsDir)) {
   for (const name of readdirSync(specsDir)) {
-    if (/^\d{4}-/.test(name) && !existsSync(join(specsDir, name, "spec.md")))
+    if (/^\d{4}-/.test(name) && !existsSync(join(specsDir, name, "spec.md"))) {
       err(join(specsDir, name), "feature sem `spec.md`");
+    }
   }
 }
 
-// Relatório
 if (errors.length) {
   console.error(`\n✗ Auditoria da esteira: ${errors.length} problema(s)\n`);
   for (const e of errors) console.error(`  • ${e}`);

@@ -1,60 +1,62 @@
----
+﻿---
 name: metrics
-description: Métricas de entrega — Lead Time, Throughput, maturidade de Continuous Delivery/Deployment e qualidade de código (cobertura, análise estática). Puxe ao revisar o fluxo ou planejar. Atualizado por /metricas.
+description: MÃ©tricas de entrega â€” Lead Time, Throughput, maturidade de Continuous Delivery/Deployment e qualidade de cÃ³digo (cobertura, anÃ¡lise estÃ¡tica). Puxe ao revisar o fluxo ou planejar. Atualizado por /metricas.
 alwaysApply: false
 ---
 
-# Métricas de entrega
+# MÃ©tricas de entrega
 
-> Saúde do fluxo: **Lead Time**, **Throughput** e **Continuous Delivery/Deployment**.
-> Atualizado por `/metricas`. Use para **achar gargalo**, não para ranquear pessoas.
+> SaÃºde do fluxo: **Lead Time**, **Throughput** e **Continuous Delivery/Deployment**.
+> Atualizado por `/metricas`. Use para **achar gargalo**, nÃ£o para ranquear pessoas.
 
-**Período:** <ciclo / datas> · **Atualizado em:** <YYYY-MM-DD>
+**PerÃ­odo:** <ciclo / datas> Â· **Atualizado em:** <YYYY-MM-DD>
 
-## Lead Time — tempo até produção
-> Do início (spec / issue / 1º commit) ao deploy em prod. Reporte **mediana** e **p85**.
+## Lead Time â€” tempo atÃ© produÃ§Ã£o
+> Do inÃ­cio (spec / issue / 1Âº commit) ao deploy em prod. Reporte **mediana** e **p85**.
 
-| Item                | Início       | Em prod      | Lead time |
+| Item                | InÃ­cio       | Em prod      | Lead time |
 |---------------------|--------------|--------------|-----------|
 | <feature / issue>   | <data>       | <data>       | <Xd Yh>   |
 
-- **Mediana:** <…> · **p85:** <…> · **Tendência:** <↑ / → / ↓>
+- **Mediana:** <â€¦> Â· **p85:** <â€¦> Â· **TendÃªncia:** <â†‘ / â†’ / â†“>
 
-## Throughput — itens concluídos no ciclo
-> Quantos itens chegaram a "pronto"/prod no período.
+## Throughput â€” itens concluÃ­dos no ciclo
+> Quantos itens chegaram a "pronto"/prod no perÃ­odo.
 
-| Tipo       | Concluídos |
+| Tipo       | ConcluÃ­dos |
 |------------|------------|
-| Histórias  | <n>        |
+| HistÃ³rias  | <n>        |
 | Bugs       | <n>        |
 | Tarefas    | <n>        |
 | **Total**  | **<n>**    |
 
-- **Tendência vs ciclo anterior:** <↑ / → / ↓>
+- **TendÃªncia vs ciclo anterior:** <â†‘ / â†’ / â†“>
 
 ## Continuous Delivery / Deployment
-| Prática                                    | Estado atual         | Gap para avançar |
+| PrÃ¡tica                                    | Estado atual         | Gap para avanÃ§ar |
 |--------------------------------------------|----------------------|------------------|
-| Continuous Delivery (deployável sempre)    | sim / parcial / não  | <…>              |
-| Continuous Deployment (deploy automático)  | sim / parcial / não  | <…>              |
+| Continuous Delivery (deployÃ¡vel sempre)    | sim / parcial / nÃ£o  | <â€¦>              |
+| Continuous Deployment (deploy automÃ¡tico)  | sim / parcial / nÃ£o  | <â€¦>              |
 
-- **Deployment Frequency:** <nº de deploys no período>.
-- Próximo passo de automação: `/setup-ci`.
+- **Deployment Frequency:** <nÂº de deploys no perÃ­odo>.
+- PrÃ³ximo passo de automaÃ§Ã£o: `/setup-ci`.
 
-## Qualidade de código
-> Evidência rastreável do **resultado**: cobertura e análise estática. Tendência, não número isolado.
+## Qualidade de cÃ³digo
+> EvidÃªncia rastreÃ¡vel do **resultado**: cobertura e anÃ¡lise estÃ¡tica. TendÃªncia, nÃ£o nÃºmero isolado.
 > Fonte: artefatos da CI (ver `/setup-ci`). Bloqueante barra o merge (ver `engineering/TESTING.md`).
 
 ### Cobertura
-| Escopo            | Atual | Mínimo | Tendência   |
+| Escopo            | Atual | MÃ­nimo | TendÃªncia   |
 |-------------------|-------|--------|-------------|
-| Global            | <X%>  | <Y%>   | <↑ / → / ↓> |
-| <módulo / camada> | <X%>  | —      | <↑ / → / ↓> |
+| Global            | <X%>  | <Y%>   | <â†‘ / â†’ / â†“> |
+| <mÃ³dulo / camada> | <X%>  | â€”      | <â†‘ / â†’ / â†“> |
 
-### Análise estática
-| Categoria                 | Findings | Bloqueantes | Tendência   |
+### AnÃ¡lise estÃ¡tica
+| Categoria                 | Findings | Bloqueantes | TendÃªncia   |
 |---------------------------|----------|-------------|-------------|
-| Type-check                | <n>      | <n>         | <↑ / → / ↓> |
-| Complexidade / smells     | <n>      | <n>         | <↑ / → / ↓> |
-| Segurança (SAST)          | <n>      | <n>         | <↑ / → / ↓> |
-| Duplicação                | <n>      | —           | <↑ / → / ↓> |
+| Type-check                | <n>      | <n>         | <â†‘ / â†’ / â†“> |
+| Complexidade / smells     | <n>      | <n>         | <â†‘ / â†’ / â†“> |
+| SeguranÃ§a (SAST)          | <n>      | <n>         | <â†‘ / â†’ / â†“> |
+| DuplicaÃ§Ã£o                | <n>      | â€”           | <â†‘ / â†’ / â†“> |
+
+

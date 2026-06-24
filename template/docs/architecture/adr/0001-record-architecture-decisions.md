@@ -1,31 +1,33 @@
----
+﻿---
 name: ADR-0001
-description: Decisão de usar ADRs. Puxe ao registrar ou rever decisões.
+description: DecisÃ£o de usar ADRs. Puxe ao registrar ou rever decisÃµes.
 alwaysApply: false
 ---
 
-# ADR-0001: Registrar decisões de arquitetura como ADRs
+# ADR-0001: Registrar decisÃµes de arquitetura como ADRs
 
 - **Status:** aceito
 - **Data:** <YYYY-MM-DD>
 - **Decisores:** <nomes>
 
 ## Contexto
-Decisões arquiteturais difíceis de reverter precisam de memória durável. Sem isso,
-o time reabre as mesmas discussões e perde o *porquê* de escolhas antigas.
+DecisÃµes arquiteturais difÃ­ceis de reverter precisam de memÃ³ria durÃ¡vel. Sem isso,
+o time reabre as mesmas discussÃµes e perde o *porquÃª* de escolhas antigas.
 
-## Decisão
+## DecisÃ£o
 Usaremos **Architecture Decision Records** (formato Nygard) em `docs/architecture/adr/`.
-- Um arquivo por decisão, numerado sequencialmente: `NNNN-titulo.md`.
-- ADRs são **imutáveis**. Para mudar uma decisão, crie um novo ADR com status
-  `substitui ADR-XXXX` e marque o antigo como `substituído por ADR-YYYY`.
-- Crie um ADR quando a decisão for difícil de reverter (escolha de banco,
-  fronteira de contexto, protocolo de integração, padrão transversal).
+- Um arquivo por decisÃ£o, numerado sequencialmente: `NNNN-titulo.md`.
+- ADRs sÃ£o **imutÃ¡veis**. Para mudar uma decisÃ£o, crie um novo ADR com status
+  `substitui ADR-XXXX` e marque o antigo como `substituÃ­do por ADR-YYYY`.
+- Crie um ADR quando a decisÃ£o for difÃ­cil de reverter (escolha de banco,
+  fronteira de contexto, protocolo de integraÃ§Ã£o, padrÃ£o transversal).
 
-## Consequências
-- **+** Rastreabilidade do *porquê*; onboarding mais rápido.
-- **+** Reviews mais objetivos (a decisão tem um lar).
-- **−** Pequeno overhead por decisão — aceitável e restrito ao tier arquitetural.
+## ConsequÃªncias
+- **+** Rastreabilidade do *porquÃª*; onboarding mais rÃ¡pido.
+- **+** Reviews mais objetivos (a decisÃ£o tem um lar).
+- **âˆ’** Pequeno overhead por decisÃ£o â€” aceitÃ¡vel e restrito ao tier arquitetural.
 
 ## Template para novos ADRs
 Ver `docs/architecture/adr/_template.md`.
+
+

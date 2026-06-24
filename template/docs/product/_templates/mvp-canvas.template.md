@@ -1,38 +1,40 @@
----
+﻿---
 name: mvp-canvas
-description: Canvas do MVP. Puxe na descoberta e priorização do MVP.
+description: Canvas do MVP. Puxe na descoberta e priorizaÃ§Ã£o do MVP.
 alwaysApply: false
 ---
 
-# MVP Canvas — <nome do projeto>
+# MVP Canvas â€” <nome do projeto>
 
-> Lean Inception (Paulo Caroli). O MVP é a menor coisa que gera aprendizado validado,
-> não a versão "pequena" do produto final.
+> Lean Inception (Paulo Caroli). O MVP Ã© a menor coisa que gera aprendizado validado,
+> nÃ£o a versÃ£o "pequena" do produto final.
 
-## 1. Proposta do MVP (visão)
-<Uma frase: que valor mínimo entregamos e o que queremos aprender com isso.>
+## 1. Proposta do MVP (visÃ£o)
+<Uma frase: que valor mÃ­nimo entregamos e o que queremos aprender com isso.>
 
 ## 2. Personas e segmentos do MVP
-<Quem participa do primeiro experimento (subconjunto das personas da visão).>
+<Quem participa do primeiro experimento (subconjunto das personas da visÃ£o).>
 
 ## 3. Jornadas
-<As 1-3 jornadas de usuário que o MVP precisa cobrir ponta a ponta.>
+<As 1-3 jornadas de usuÃ¡rio que o MVP precisa cobrir ponta a ponta.>
 
 ## 4. Funcionalidades (sequenciadas)
-> Priorize por **valor de negócio × esforço**. Só o que é indispensável para a jornada.
+> Priorize por **valor de negÃ³cio Ã— esforÃ§o**. SÃ³ o que Ã© indispensÃ¡vel para a jornada.
 
-| # | Funcionalidade        | Valor | Esforço | Entra no MVP? |
+| # | Funcionalidade        | Valor | EsforÃ§o | Entra no MVP? |
 |---|-----------------------|-------|---------|---------------|
-| 1 | <…>                   | alto  | baixo   | sim           |
-| 2 | <…>                   | médio | alto    | depois        |
+| 1 | <â€¦>                   | alto  | baixo   | sim           |
+| 2 | <â€¦>                   | mÃ©dio | alto    | depois        |
 
 ## 5. Resultado esperado / como validar
-<Que métrica/comportamento confirma ou refuta a hipótese? Critério de sucesso do MVP.>
+<Que mÃ©trica/comportamento confirma ou refuta a hipÃ³tese? CritÃ©rio de sucesso do MVP.>
 
 ## 6. Custo e cronograma
-<Estimativa grosseira de esforço e janela de tempo para o experimento.>
+<Estimativa grosseira de esforÃ§o e janela de tempo para o experimento.>
 
-## 7. Hipóteses e aprendizados
-| Hipótese                          | Como medir            | Resultado |
+## 7. HipÃ³teses e aprendizados
+| HipÃ³tese                          | Como medir            | Resultado |
 |-----------------------------------|-----------------------|-----------|
-| <acreditamos que…>                | <métrica/sinal>       | <a preencher> |
+| <acreditamos queâ€¦>                | <mÃ©trica/sinal>       | <a preencher> |
+
+

@@ -1,103 +1,105 @@
----
+﻿---
 name: design
-description: Technical Design Doc — 5 eixos + tabelas de dependências, solução, riscos e roadmap, com links ao repo de artefatos do time. Puxe ao desenhar feature arquitetural.
+description: Technical Design Doc â€” 5 eixos + tabelas de dependÃªncias, soluÃ§Ã£o, riscos e roadmap, com links ao repo de artefatos do time. Puxe ao desenhar feature arquitetural.
 alwaysApply: false
 ---
 
-# Technical Design Doc — <nome da feature>
+# Technical Design Doc â€” <nome da feature>
 
-> **Tier:** arquitetural · **Status:** rascunho | em review | aprovado
-> **Autor:** <nome> · **Revisores:** <nomes> · **Data:** <YYYY-MM-DD>
-> Responde: **como** no nível de sistema. Obrigatório no tier arquitetural.
+> **Tier:** arquitetural Â· **Status:** rascunho | em review | aprovado
+> **Autor:** <nome> Â· **Revisores:** <nomes> Â· **Data:** <YYYY-MM-DD>
+> Responde: **como** no nÃ­vel de sistema. ObrigatÃ³rio no tier arquitetural.
 
 ## Links e artefatos
-> Conexão com o repositório de artefatos do time. Publique via `/integracoes` (escrita repo → ferramenta).
+> ConexÃ£o com o repositÃ³rio de artefatos do time. Publique via `/integracoes` (escrita repo â†’ ferramenta).
 
 | Artefato                 | Onde                  | Link                        |
 |--------------------------|-----------------------|-----------------------------|
-| Página do design         | Confluence / Notion   | <url>                       |
-| Issue / épico            | Jira / Linear         | <PROJ-123>                  |
+| PÃ¡gina do design         | Confluence / Notion   | <url>                       |
+| Issue / Ã©pico            | Jira / Linear         | <PROJ-123>                  |
 | Repo de artefatos        | <Drive / wiki / repo> | <url>                       |
-| Spec · Product · Domínio | repositório           | `./spec.md` · `./product.md` · `./domain.md` |
+| Spec Â· Product Â· DomÃ­nio | repositÃ³rio           | `./spec.md` Â· `./product.md` Â· `./domain.md` |
 
 ## Contexto da funcionalidade
-<Estado atual, restrições, por que agora. O problema que esta feature resolve (link `product.md`).>
+<Estado atual, restriÃ§Ãµes, por que agora. O problema que esta feature resolve (link `product.md`).>
 
 ## Goals / Non-goals
 **Goals**
-- <objetivo técnico mensurável>
+- <objetivo tÃ©cnico mensurÃ¡vel>
 
 **Non-goals**
 - <fora de escopo deste design>
 
-## Glossário (da funcionalidade)
-> Termos específicos desta feature. Termo novo → **promova ao `docs/glossary.md`** (linguagem ubíqua).
+## GlossÃ¡rio (da funcionalidade)
+> Termos especÃ­ficos desta feature. Termo novo â†’ **promova ao `docs/glossary.md`** (linguagem ubÃ­qua).
 
-| Termo     | Descrição                                  |
+| Termo     | DescriÃ§Ã£o                                  |
 |-----------|--------------------------------------------|
 | <Termo>   | <significado preciso no contexto da feature> |
 
 ## Design proposto
-<A solução. Diagramas (C4/sequência — gere com `/diagramar`), componentes, fluxo de dados,
+<A soluÃ§Ã£o. Diagramas (C4/sequÃªncia â€” gere com `/diagramar`), componentes, fluxo de dados,
 contratos de API, modelo de dados. Mostre as fronteiras com os bounded contexts existentes.>
 
 ## Cobertura dos 5 eixos
-> Toda decisão técnica passa por estes 5 eixos. Preencha o que toca; marque "sem impacto" no resto.
-> Decisão estrutural em qualquer eixo → vira ADR.
+> Toda decisÃ£o tÃ©cnica passa por estes 5 eixos. Preencha o que toca; marque "sem impacto" no resto.
+> DecisÃ£o estrutural em qualquer eixo â†’ vira ADR.
 
 ### 1. Tech stack
-<Linguagens, frameworks, libs ou serviços novos. Versões. Diverge do stack padrão? Justifique.>
+<Linguagens, frameworks, libs ou serviÃ§os novos. VersÃµes. Diverge do stack padrÃ£o? Justifique.>
 ### 2. Arquitetura base
-<Como encaixa nas camadas e bounded contexts. Nova fronteira? Novos agregados/portas? Padrão de integração.>
+<Como encaixa nas camadas e bounded contexts. Nova fronteira? Novos agregados/portas? PadrÃ£o de integraÃ§Ã£o.>
 ### 3. Infra
-<Recursos novos (fila, cache, banco), ambientes, IaC, custo. Deploy, feature flag, **reversão segura**.>
+<Recursos novos (fila, cache, banco), ambientes, IaC, custo. Deploy, feature flag, **reversÃ£o segura**.>
 ### 4. Qualidade
-<Estratégia de teste e o que cobre os AC. Gates: cobertura, contract test, performance, segurança.>
+<EstratÃ©gia de teste e o que cobre os AC. Gates: cobertura, contract test, performance, seguranÃ§a.>
 ### 5. Observabilidade
-<Métricas, logs, tracing, alertas. SLO/SLI. Como a telemetria prova que funciona?>
+<MÃ©tricas, logs, tracing, alertas. SLO/SLI. Como a telemetria prova que funciona?>
 
-## Mapa de dependências
-> O que esta feature consome/integra. Inclua APIs, serviços, libs e dados.
+## Mapa de dependÃªncias
+> O que esta feature consome/integra. Inclua APIs, serviÃ§os, libs e dados.
 
-| Dependência        | Tipo        | Descrição                  | Principais métodos / endpoints        |
+| DependÃªncia        | Tipo        | DescriÃ§Ã£o                  | Principais mÃ©todos / endpoints        |
 |--------------------|-------------|----------------------------|---------------------------------------|
-| <ex.: API Pagamentos> | REST / gRPC | <cobra e estorna cartão>   | `POST /charges` · `GET /charges/{id}` |
-| <ex.: lib X>       | biblioteca  | <para quê>                 | <funções-chave>                       |
+| <ex.: API Pagamentos> | REST / gRPC | <cobra e estorna cartÃ£o>   | `POST /charges` Â· `GET /charges/{id}` |
+| <ex.: lib X>       | biblioteca  | <para quÃª>                 | <funÃ§Ãµes-chave>                       |
 
-## Solução
-> Blocos da solução e seu estado. **Indefinido** = ainda em aberto (vira spike ou Questão em aberto).
-> A quebra fina e executável vai para o `tasks.md`.
+## SoluÃ§Ã£o
+> Blocos da soluÃ§Ã£o e seu estado. **Indefinido** = ainda em aberto (vira spike ou QuestÃ£o em aberto).
+> A quebra fina e executÃ¡vel vai para o `tasks.md`.
 
-| #  | Tarefa / bloco        | Descrição                       | Status               |
+| #  | Tarefa / bloco        | DescriÃ§Ã£o                       | Status               |
 |----|-----------------------|---------------------------------|----------------------|
-| 1  | <…>                   | <o que faz>                     | definido             |
-| 2  | <…>                   | <o que faz>                     | indefinido           |
+| 1  | <â€¦>                   | <o que faz>                     | definido             |
+| 2  | <â€¦>                   | <o que faz>                     | indefinido           |
 
 ## Alternativas consideradas
-> A seção mais valiosa do doc — mostra que o trade-off foi pensado.
+> A seÃ§Ã£o mais valiosa do doc â€” mostra que o trade-off foi pensado.
 
-| Alternativa   | Prós | Contras | Por que (não) escolhida |
+| Alternativa   | PrÃ³s | Contras | Por que (nÃ£o) escolhida |
 |---------------|------|---------|-------------------------|
 | A (escolhida) |      |         |                         |
 | B             |      |         |                         |
 
-## Trade-offs e consequências
-<O que ganhamos e o que aceitamos perder. Dívida técnica assumida conscientemente.>
+## Trade-offs e consequÃªncias
+<O que ganhamos e o que aceitamos perder. DÃ­vida tÃ©cnica assumida conscientemente.>
 
 ## Riscos
-| Risco   | Descrição          | Prob. × Impacto    | Ações / mitigações |
+| Risco   | DescriÃ§Ã£o          | Prob. Ã— Impacto    | AÃ§Ãµes / mitigaÃ§Ãµes |
 |---------|--------------------|--------------------|--------------------|
-| <risco> | <por que acontece> | médio × alto       | <o que fazer / como mitigar> |
+| <risco> | <por que acontece> | mÃ©dio Ã— alto       | <o que fazer / como mitigar> |
 
 ## Roadmap da feature
 > Fases/ondas de entrega desta feature. A Onda 1 alimenta o `docs/product/roadmap.md` global.
 
 | Fase / onda | Entrega                | Quando         | Depende de |
 |-------------|------------------------|----------------|------------|
-| 1 (MVP)     | <fatia que valida>     | <ciclo/sprint> | —          |
+| 1 (MVP)     | <fatia que valida>     | <ciclo/sprint> | â€”          |
 | 2           | <incremento>           | <depois>       | 1          |
 
-## Questões em aberto
-- [ ] <decisão pendente — quem responde, até quando>
+## QuestÃµes em aberto
+- [ ] <decisÃ£o pendente â€” quem responde, atÃ© quando>
 
-> Decisões difíceis de reverter tomadas aqui → registre como ADR em `docs/architecture/adr/`.
+> DecisÃµes difÃ­ceis de reverter tomadas aqui â†’ registre como ADR em `docs/architecture/adr/`.
+
+

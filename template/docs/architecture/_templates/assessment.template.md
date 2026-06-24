@@ -1,65 +1,67 @@
----
+﻿---
 name: assessment
 description: Retrato as-is (brownfield). Puxe ao mapear ou avaliar o codebase.
 alwaysApply: false
 ---
 
-# Assessment (as-is) — <nome do projeto>
+# Assessment (as-is) â€” <nome do projeto>
 
-> Mapa do estado atual de um projeto **já em andamento** (brownfield), gerado no kickoff.
-> Objetivo: entender o que existe antes de propor mudanças. Fotografe, não julgue ainda.
+> Mapa do estado atual de um projeto **jÃ¡ em andamento** (brownfield), gerado no kickoff.
+> Objetivo: entender o que existe antes de propor mudanÃ§as. Fotografe, nÃ£o julgue ainda.
 
-## Visão geral
-<O que o sistema faz hoje, está em produção, quantos usuários/serviços, idade do código.>
+## VisÃ£o geral
+<O que o sistema faz hoje, estÃ¡ em produÃ§Ã£o, quantos usuÃ¡rios/serviÃ§os, idade do cÃ³digo.>
 
 ## Stack detectada
-| Camada            | Tecnologia atual            | Observação |
+| Camada            | Tecnologia atual            | ObservaÃ§Ã£o |
 |-------------------|-----------------------------|------------|
-| Linguagem/runtime | <…>                         |            |
-| Frameworks        | <…>                         |            |
-| Persistência      | <…>                         |            |
-| Infra/deploy      | <…>                         |            |
+| Linguagem/runtime | <â€¦>                         |            |
+| Frameworks        | <â€¦>                         |            |
+| PersistÃªncia      | <â€¦>                         |            |
+| Infra/deploy      | <â€¦>                         |            |
 
 ## Arquitetura atual
-<Estilo real (monolito, serviços, big ball of mud?), camadas, acoplamentos perigosos,
-pontos de entrada. Onde o domínio está misturado com infra?>
+<Estilo real (monolito, serviÃ§os, big ball of mud?), camadas, acoplamentos perigosos,
+pontos de entrada. Onde o domÃ­nio estÃ¡ misturado com infra?>
 
 ## Estrutura de pastas
-<Como o código se organiza (por camada? por feature? por tipo?), onde estão os pontos de
+<Como o cÃ³digo se organiza (por camada? por feature? por tipo?), onde estÃ£o os pontos de
 entrada, e o que destoa do esperado.>
 
-## Convenções de código
-<Padrões reais observados: nomenclatura, estilo, tratamento de erro, padrões de teste.
-O que é convenção tácita (não escrita) e deveria ir para o `CLAUDE.md`?>
+## ConvenÃ§Ãµes de cÃ³digo
+<PadrÃµes reais observados: nomenclatura, estilo, tratamento de erro, padrÃµes de teste.
+O que Ã© convenÃ§Ã£o tÃ¡cita (nÃ£o escrita) e deveria ir para o `AGENTS.md`?>
 
-## Bounded contexts implícitos
-> Inferidos do código/estrutura — raramente explícitos em brownfield.
+## Bounded contexts implÃ­citos
+> Inferidos do cÃ³digo/estrutura â€” raramente explÃ­citos em brownfield.
 
-| Contexto (inferido) | Onde vive no código | Core/Support/Generic | Fronteira clara? |
+| Contexto (inferido) | Onde vive no cÃ³digo | Core/Support/Generic | Fronteira clara? |
 |---------------------|---------------------|----------------------|------------------|
-| <…>                 | <pasta/módulo>      | <…>                  | não / parcial    |
+| <â€¦>                 | <pasta/mÃ³dulo>      | <â€¦>                  | nÃ£o / parcial    |
 
 ## Testes & CI
 <Tipos de teste existentes, cobertura aproximada, o que a CI roda, comandos de gate.
 Alimenta o `docs/engineering/TESTING.md`.>
 
-## Integrações
-| Integração       | Tipo (API/lib/fila) | Como é usada            | Risco/acoplamento |
+## IntegraÃ§Ãµes
+| IntegraÃ§Ã£o       | Tipo (API/lib/fila) | Como Ã© usada            | Risco/acoplamento |
 |------------------|---------------------|-------------------------|-------------------|
-| <ex.: gateway X> | REST                | <…>                     | <…>               |
+| <ex.: gateway X> | REST                | <â€¦>                     | <â€¦>               |
 
 ## Maturidade nos 5 eixos
-| Eixo            | Estado atual                  | Gap vs padrão SDD        | Risco |
+| Eixo            | Estado atual                  | Gap vs padrÃ£o SDD        | Risco |
 |-----------------|-------------------------------|--------------------------|-------|
-| Tech stack      | <…>                           | <…>                      | baixo/médio/alto |
-| Arquitetura     | <…>                           | <…>                      |       |
-| Infra           | <…>                           | <…>                      |       |
-| Qualidade       | <testes? cobertura? análise estática? CI?> | <…>         |       |
-| Observabilidade | <logs/métricas/tracing/SLO?>  | <…>                      |       |
+| Tech stack      | <â€¦>                           | <â€¦>                      | baixo/mÃ©dio/alto |
+| Arquitetura     | <â€¦>                           | <â€¦>                      |       |
+| Infra           | <â€¦>                           | <â€¦>                      |       |
+| Qualidade       | <testes? cobertura? anÃ¡lise estÃ¡tica? CI?> | <â€¦>         |       |
+| Observabilidade | <logs/mÃ©tricas/tracing/SLO?>  | <â€¦>                      |       |
 
-## Dívidas e riscos principais
-1. <maior risco — o que pode causar incidente ou travar evolução>
+## DÃ­vidas e riscos principais
+1. <maior risco â€” o que pode causar incidente ou travar evoluÃ§Ã£o>
 
-## Decisões históricas a capturar como ADR
-> Escolhas estruturais já tomadas, mas sem registro. Vire ADR retroativo (status: aceito).
-- [ ] <ex.: "uso de X como banco" — por que foi escolhido, se ainda se sustenta>
+## DecisÃµes histÃ³ricas a capturar como ADR
+> Escolhas estruturais jÃ¡ tomadas, mas sem registro. Vire ADR retroativo (status: aceito).
+- [ ] <ex.: "uso de X como banco" â€” por que foi escolhido, se ainda se sustenta>
+
+

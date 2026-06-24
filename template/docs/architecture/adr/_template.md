@@ -1,21 +1,23 @@
----
+﻿---
 name: adr-template
-description: Template de ADR. Use ao registrar uma decisão difícil de reverter.
+description: Template de ADR. Use ao registrar uma decisÃ£o difÃ­cil de reverter.
 alwaysApply: false
 ---
 
-# ADR-NNNN: <título da decisão>
+# ADR-NNNN: <tÃ­tulo da decisÃ£o>
 
-- **Status:** proposto | aceito | substituído por ADR-XXXX
+- **Status:** proposto | aceito | substituÃ­do por ADR-XXXX
 - **Data:** <YYYY-MM-DD>
 - **Decisores:** <nomes>
 
 ## Contexto
-<Forças em jogo, restrições, o problema que exige uma decisão. Fatos, não opinião.>
+<ForÃ§as em jogo, restriÃ§Ãµes, o problema que exige uma decisÃ£o. Fatos, nÃ£o opiniÃ£o.>
 
-## Decisão
-<A escolha, em voz ativa: "Vamos usar X". Inclua as alternativas descartadas e o porquê.>
+## DecisÃ£o
+<A escolha, em voz ativa: "Vamos usar X". Inclua as alternativas descartadas e o porquÃª.>
 
-## Consequências
+## ConsequÃªncias
 - **+** <ganhos>
-- **−** <custos/dívida aceitos conscientemente>
+- **âˆ’** <custos/dÃ­vida aceitos conscientemente>
+
+

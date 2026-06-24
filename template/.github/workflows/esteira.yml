@@ -1,5 +1,5 @@
-# Gate de conformidade da esteira SDD.
-# Falha o PR se a estrutura violar o padrão (frontmatter, links, specs).
+﻿# Gate de conformidade da esteira SDD.
+# Falha o PR se a estrutura violar o padrÃ£o (frontmatter, links, specs).
 # Complemente com os gates de teste/cobertura do seu pipeline (ver /setup-ci e docs/engineering/TESTING.md).
 name: esteira
 
@@ -21,5 +21,7 @@ jobs:
         run: node scripts/audit-esteira.mjs .
       - name: Validar diagramas Mermaid
         run: node scripts/validate-mermaid.mjs .
-      - name: Eval de fidelidade spec→implementação
+      - name: Eval de fidelidade specâ†’implementaÃ§Ã£o
         run: node scripts/eval-spec-fidelity.mjs .
+
+

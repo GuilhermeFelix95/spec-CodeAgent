@@ -1,18 +1,18 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 // Validador estrutural de blocos Mermaid em arquivos .md.
-// Zero-dep (não renderiza): pega os erros que mais quebram o render e que o agente mais comete —
-//   • bloco vazio                              (fatal)
-//   • tipo de diagrama ausente/desconhecido    (fatal)
-//   • aspas duplas desbalanceadas              (fatal)
-//   • (), [] ou {} desbalanceados              (aviso — shapes assimétricos `>...]` dão falso-positivo)
+// Zero-dep (nÃ£o renderiza): pega os erros que mais quebram o render e que o agente mais comete â€”
+//   â€¢ bloco vazio                              (fatal)
+//   â€¢ tipo de diagrama ausente/desconhecido    (fatal)
+//   â€¢ aspas duplas desbalanceadas              (fatal)
+//   â€¢ (), [] ou {} desbalanceados              (aviso â€” shapes assimÃ©tricos `>...]` dÃ£o falso-positivo)
 // Uso: node scripts/validate-mermaid.mjs [dir]   (default: ".")
-// Sai com código 1 se houver erro fatal. Serve de gate na CI e no /diagramar.
+// Sai com cÃ³digo 1 se houver erro fatal. Serve de gate na CI e no /diagramar.
 
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve, extname, relative } from "node:path";
 
 const ROOT = resolve(process.argv[2] || ".");
-// Mesmas pastas que o audit ignora: derivadas/sistema, não a fonte canônica.
+// Mesmas pastas que o audit ignora: derivadas/sistema, nÃ£o a fonte canÃ´nica.
 const IGNORE_DIRS = new Set([
   "node_modules", ".git", ".spec-driven",
   ".agents", ".cursor", ".gemini", ".windsurf",
@@ -39,7 +39,7 @@ function walk(dir) {
   return out;
 }
 
-// Extrai cada bloco ```mermaid … ``` com a linha (1-based) onde a cerca abre.
+// Extrai cada bloco ```mermaid â€¦ ``` com a linha (1-based) onde a cerca abre.
 function mermaidBlocks(text) {
   const lines = text.split(/\r?\n/);
   const blocks = [];
@@ -56,7 +56,7 @@ function mermaidBlocks(text) {
   return blocks;
 }
 
-// Tira comentários/diretivas (%% até o fim da linha) — também derruba `%%{init:…}%%`.
+// Tira comentÃ¡rios/diretivas (%% atÃ© o fim da linha) â€” tambÃ©m derruba `%%{init:â€¦}%%`.
 const stripComments = (body) =>
   body.map((l) => { const i = l.indexOf("%%"); return i === -1 ? l : l.slice(0, i); }).join("\n");
 
@@ -71,7 +71,7 @@ for (const f of walk(ROOT)) {
   blocks.forEach((b, n) => {
     const where = `${rel} (bloco mermaid #${n + 1}, linha ${b.start})`;
 
-    // 1) Tipo de diagrama: 1ª linha significativa (pula vazias, comentários e frontmatter ---…---).
+    // 1) Tipo de diagrama: 1Âª linha significativa (pula vazias, comentÃ¡rios e frontmatter ---â€¦---).
     let i = 0;
     while (i < b.body.length && b.body[i].trim() === "") i++;
     if (i < b.body.length && b.body[i].trim() === "---") {           // frontmatter YAML interno
@@ -90,7 +90,7 @@ for (const f of walk(ROOT)) {
     const quotes = (stripped.match(/"/g) || []).length;
     if (quotes % 2 !== 0) errors.push(`${where}: aspas duplas desbalanceadas (${quotes})`);
 
-    // 3) Delimitadores (aviso) — ignora o que está entre aspas.
+    // 3) Delimitadores (aviso) â€” ignora o que estÃ¡ entre aspas.
     let outside = "", inQ = false;
     for (const ch of stripped) {
       if (ch === '"') inQ = !inQ;
@@ -105,13 +105,15 @@ for (const f of walk(ROOT)) {
 }
 
 if (warns.length) {
-  console.log(`\n⚠ Avisos Mermaid (${warns.length}) — confira (shapes assimétricos \`>…]\` podem ser falso-positivo):`);
-  for (const w of warns) console.log(`  • ${w}`);
+  console.log(`\nâš  Avisos Mermaid (${warns.length}) â€” confira (shapes assimÃ©tricos \`>â€¦]\` podem ser falso-positivo):`);
+  for (const w of warns) console.log(`  â€¢ ${w}`);
 }
 if (errors.length) {
-  console.error(`\n✗ Validação Mermaid: ${errors.length} erro(s)\n`);
-  for (const e of errors) console.error(`  • ${e}`);
+  console.error(`\nâœ— ValidaÃ§Ã£o Mermaid: ${errors.length} erro(s)\n`);
+  for (const e of errors) console.error(`  â€¢ ${e}`);
   console.error("");
   process.exit(1);
 }
-console.log(`✓ Validação Mermaid: blocos OK (tipo, aspas, delimitadores).`);
+console.log(`âœ“ ValidaÃ§Ã£o Mermaid: blocos OK (tipo, aspas, delimitadores).`);
+
+

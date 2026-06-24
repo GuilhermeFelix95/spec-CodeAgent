@@ -1,7 +1,7 @@
 {
   "name": "@igoruehara/spec-driven",
   "version": "0.1.9",
-  "description": "Scaffold de Spec-Driven Development (SDD) para agentes de IA (Claude Code, Codex, Cursor, Copilot, Gemini, Windsurf) — esteira Lean Inception + DDD + Technical Design Docs, com skills, templates e gates de qualidade. Use via npx em qualquer projeto.",
+  "description": "CodeAgent for agents of IA (Codex, Cursor, Copilot, Gemini, Windsurf) - Lean Inception + DDD + Technical Design Docs, with skills, templates, and quality gates. Use via npx in any project.",
   "type": "module",
   "bin": {
     "spec-driven": "bin/cli.mjs"
@@ -19,16 +19,12 @@
     "spec-driven-development",
     "ddd",
     "lean-inception",
-    "claude-code",
-    "claude",
     "codex",
     "agents-md",
     "cursor",
     "copilot",
     "gemini",
     "windsurf",
-    "scaffold",
-    "boilerplate",
     "agent-skills"
   ],
   "author": "igoruehara",
@@ -46,7 +42,7 @@
   },
   "scripts": {
     "pack:check": "npm pack --dry-run",
-    "test:scaffold": "node bin/cli.mjs .tmp-scaffold-test --all --force --yes",
-    "prepublishOnly": "node bin/cli.mjs .tmp-scaffold-test --all --force --yes"
+    "test:setup": "node bin/cli.mjs .tmp-codeagent-test --all --force --yes",
+    "prepublishOnly": "node bin/cli.mjs .tmp-codeagent-test --all --force --yes"
   }
 }

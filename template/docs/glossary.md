@@ -1,16 +1,18 @@
----
+﻿---
 name: glossary
-description: Linguagem ubíqua. Puxe ao nomear, modelar domínio ou escrever specs.
+description: Linguagem ubÃ­qua. Puxe ao nomear, modelar domÃ­nio ou escrever specs.
 alwaysApply: false
 ---
 
-# Glossário — Linguagem Ubíqua
+# GlossÃ¡rio â€” Linguagem UbÃ­qua
 
-> A fonte única do vocabulário do sistema. O mesmo termo aparece aqui, na spec e no código.
-> Termo novo introduzido por uma feature → adicione no mesmo PR. Sem sinônimos.
+> A fonte Ãºnica do vocabulÃ¡rio do sistema. O mesmo termo aparece aqui, na spec e no cÃ³digo.
+> Termo novo introduzido por uma feature â†’ adicione no mesmo PR. Sem sinÃ´nimos.
 
-| Termo        | Definição                                      | NÃO confundir com | Contexto (bounded context) |
+| Termo        | DefiniÃ§Ã£o                                      | NÃƒO confundir com | Contexto (bounded context) |
 |--------------|------------------------------------------------|-------------------|----------------------------|
-| <Termo>      | <significado preciso no domínio>               | <termo parecido>  | <contexto>                 |
+| <Termo>      | <significado preciso no domÃ­nio>               | <termo parecido>  | <contexto>                 |
 
-<!-- Mantenha em ordem alfabética. Cada linha deve ter um dono mental claro. -->
+<!-- Mantenha em ordem alfabÃ©tica. Cada linha deve ter um dono mental claro. -->
+
+

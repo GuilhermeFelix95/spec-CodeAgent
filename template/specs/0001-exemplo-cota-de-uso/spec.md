@@ -1,64 +1,66 @@
----
+﻿---
 name: spec
-description: Contrato da feature (critérios de aceite). Base enquanto a feature está ativa.
+description: Contrato da feature (critÃ©rios de aceite). Base enquanto a feature estÃ¡ ativa.
 alwaysApply: true
 ---
 
-# Spec — Cota de uso por organização
+# Spec â€” Cota de uso por organizaÃ§Ã£o
 
 > **Fonte da verdade.** Status: aprovado.
 
 ## Resumo
-Cada organização tem uma cota de requisições por janela de tempo. Ao estourar, a API
-responde 429 com headers de cota até a janela reiniciar.
+Cada organizaÃ§Ã£o tem uma cota de requisiÃ§Ãµes por janela de tempo. Ao estourar, a API
+responde 429 com headers de cota atÃ© a janela reiniciar.
 
-## Critérios de aceite
+## CritÃ©rios de aceite
 
-### AC-1: requisição dentro da cota é aceita
+### AC-1: requisiÃ§Ã£o dentro da cota Ã© aceita
 - **Dado** uma org com cota de 1000/min e uso atual de 999
-- **Quando** ela faz 1 requisição
-- **Então** a requisição é encaminhada para inferência
+- **Quando** ela faz 1 requisiÃ§Ã£o
+- **EntÃ£o** a requisiÃ§Ã£o Ã© encaminhada para inferÃªncia
 - **E** a resposta inclui `X-Quota-Remaining: 0`
 
-### AC-2: requisição acima da cota é recusada
+### AC-2: requisiÃ§Ã£o acima da cota Ã© recusada
 - **Dado** uma org com cota de 1000/min e uso atual de 1000
-- **Quando** ela faz 1 requisição
-- **Então** a API responde `429 Too Many Requests`
-- **E** inclui `Retry-After` com os segundos até o reset da janela
+- **Quando** ela faz 1 requisiÃ§Ã£o
+- **EntÃ£o** a API responde `429 Too Many Requests`
+- **E** inclui `Retry-After` com os segundos atÃ© o reset da janela
 - **E** emite o evento `QuotaExceeded`
 
 ### AC-3: janela reinicia a contagem
 - **Dado** uma org que estourou a cota na janela anterior
-- **Quando** uma nova janela começa
-- **Então** o uso volta a 0 e novas requisições são aceitas
+- **Quando** uma nova janela comeÃ§a
+- **EntÃ£o** o uso volta a 0 e novas requisiÃ§Ãµes sÃ£o aceitas
 
 ### AC-4: indisponibilidade do contador faz fail-open
-- **Dado** que o contador de uso (Redis) está indisponível
-- **Quando** uma org faz uma requisição
-- **Então** a requisição é aceita (fail-open)
-- **E** um alerta de degradação é emitido
+- **Dado** que o contador de uso (Redis) estÃ¡ indisponÃ­vel
+- **Quando** uma org faz uma requisiÃ§Ã£o
+- **EntÃ£o** a requisiÃ§Ã£o Ã© aceita (fail-open)
+- **E** um alerta de degradaÃ§Ã£o Ã© emitido
 
-## Matriz de decisão
+## Matriz de decisÃ£o
 > Como a checagem combina flag + modo + estado do contador, a tabela-verdade resolve a
-> combinatória sem prosa. Cada linha é um caso de teste; AC-3 (reinício da janela) é temporal
-> e fica nos critérios acima.
+> combinatÃ³ria sem prosa. Cada linha Ã© um caso de teste; AC-3 (reinÃ­cio da janela) Ã© temporal
+> e fica nos critÃ©rios acima.
 
 | `usage_quota_enabled` | Modo | Uso vs cota | Contador (Redis) | Resultado | AC |
 |---|---|---|---|---|---|
-| `false` | — | — | — | Aceita; checagem pulada | borda |
-| `true` | shadow | estourou | ok | Aceita + emite métrica; **não** bloqueia | borda |
+| `false` | â€” | â€” | â€” | Aceita; checagem pulada | borda |
+| `true` | shadow | estourou | ok | Aceita + emite mÃ©trica; **nÃ£o** bloqueia | borda |
 | `true` | normal | dentro | ok | Aceita + `X-Quota-Remaining` | AC-1 |
 | `true` | normal | estourou | ok | `429` + `Retry-After` + evento `QuotaExceeded` | AC-2 |
-| `true` | normal | — | indisponível | Aceita (fail-open) + alerta de degradação | AC-4 |
+| `true` | normal | â€” | indisponÃ­vel | Aceita (fail-open) + alerta de degradaÃ§Ã£o | AC-4 |
 
 ## Casos de borda e erros
-- Cota configurada como 0 ou negativa → rejeitada na validação do domínio (config inválida).
-- Demais combinações de flag/modo/contador: ver a **matriz de decisão** acima.
+- Cota configurada como 0 ou negativa â†’ rejeitada na validaÃ§Ã£o do domÃ­nio (config invÃ¡lida).
+- Demais combinaÃ§Ãµes de flag/modo/contador: ver a **matriz de decisÃ£o** acima.
 
 ## Fora de escopo
-- Cobrança por excedente.
-- Cota por usuário individual.
+- CobranÃ§a por excedente.
+- Cota por usuÃ¡rio individual.
 
 ## Rastreabilidade
-- Product: `./product.md` · Design: `./design.md` · Domínio: `./domain.md`
+- Product: `./product.md` Â· Design: `./design.md` Â· DomÃ­nio: `./domain.md`
 - ADR a criar: ADR-0002 (janela fixa vs deslizante)
+
+

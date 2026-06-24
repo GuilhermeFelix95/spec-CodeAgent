@@ -1,31 +1,33 @@
----
+﻿---
 name: STATE
-description: Memória de trabalho volátil — onde paramos, próximo passo, bloqueios.
+description: MemÃ³ria de trabalho volÃ¡til â€” onde paramos, prÃ³ximo passo, bloqueios.
 alwaysApply: true
 ---
 
-# STATE — Memória viva do projeto
+# STATE â€” MemÃ³ria viva do projeto
 
-> Memória de trabalho **entre sessões** (humanos e agentes). É **volátil**: atualizada o tempo
-> todo. Diferente do **ADR** (decisão durável e imutável). Decisão estrutural → ADR; estado do
-> trabalho → aqui. Atualize ao **pausar/encerrar**; leia ao **retomar**. Use a skill `/handoff`.
+> MemÃ³ria de trabalho **entre sessÃµes** (humanos e agentes). Ã‰ **volÃ¡til**: atualizada o tempo
+> todo. Diferente do **ADR** (decisÃ£o durÃ¡vel e imutÃ¡vel). DecisÃ£o estrutural â†’ ADR; estado do
+> trabalho â†’ aqui. Atualize ao **pausar/encerrar**; leia ao **retomar**. Use a skill `/handoff`.
 
-**Última atualização:** <YYYY-MM-DD> por <nome>
+**Ãšltima atualizaÃ§Ã£o:** <YYYY-MM-DD> por <nome>
 
-## Em andamento / próximo passo
-> O que está aberto agora e a **próxima ação concreta** (não "continuar a feature" — diga o passo).
-- Feature ativa: `specs/NNNN-<nome>/` — <fase atual>
-- Próximo passo: <ação específica>
+## Em andamento / prÃ³ximo passo
+> O que estÃ¡ aberto agora e a **prÃ³xima aÃ§Ã£o concreta** (nÃ£o "continuar a feature" â€” diga o passo).
+- Feature ativa: `specs/NNNN-<nome>/` â€” <fase atual>
+- PrÃ³ximo passo: <aÃ§Ã£o especÃ­fica>
 
-## Decisões recentes
-> Resumo cronológico. Se for difícil de reverter, vire um ADR e linke aqui.
-- <YYYY-MM-DD: decisão — [ADR-NNNN](adr/NNNN-*.md) se aplicável>
+## DecisÃµes recentes
+> Resumo cronolÃ³gico. Se for difÃ­cil de reverter, vire um ADR e linke aqui.
+- <YYYY-MM-DD: decisÃ£o â€” [ADR-NNNN](adr/NNNN-*.md) se aplicÃ¡vel>
 
 ## Bloqueios
-- [ ] <o que trava · quem/como destrava · desde quando>
+- [ ] <o que trava Â· quem/como destrava Â· desde quando>
 
-## Ideias adiadas / backlog técnico
-- <ideia → quando reconsiderar (qual gatilho)>
+## Ideias adiadas / backlog tÃ©cnico
+- <ideia â†’ quando reconsiderar (qual gatilho)>
 
 ## Todos soltos
-- [ ] <tarefa que não cabe ainda numa spec>
+- [ ] <tarefa que nÃ£o cabe ainda numa spec>
+
+

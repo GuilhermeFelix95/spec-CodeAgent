@@ -1,16 +1,16 @@
-#!/usr/bin/env node
-// Eval de fidelidade spec→implementação.
+﻿#!/usr/bin/env node
+// Eval de fidelidade specâ†’implementaÃ§Ã£o.
 // Para cada specs/NNNN-*/: extrai os AC da spec, checa cobertura por task (tasks.md) e
-// referência em código/teste (token AC-N), e conta SPEC_DEVIATION abertos.
-// Falha (exit 1) se algum AC não é coberto por NENHUMA task (rastreabilidade quebrada).
-// Referência em teste é AVISO até a feature ser implementada.
+// referÃªncia em cÃ³digo/teste (token AC-N), e conta SPEC_DEVIATION abertos.
+// Falha (exit 1) se algum AC nÃ£o Ã© coberto por NENHUMA task (rastreabilidade quebrada).
+// ReferÃªncia em teste Ã© AVISO atÃ© a feature ser implementada.
 // Uso: node scripts/eval-spec-fidelity.mjs [dir]
 
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, resolve, extname } from "node:path";
 
 const ROOT = resolve(process.argv[2] || ".");
-const SKIP = new Set(["node_modules", ".git", ".claude", "specs", "docs", "scripts"]);
+const SKIP = new Set(["node_modules", ".git", ".agent", "specs", "docs", "scripts"]);
 const CODE_EXT = new Set([".js",".mjs",".cjs",".ts",".tsx",".jsx",".py",".go",".java",".rb",".php",".cs",".rs",".kt",".swift",".sql",".feature",".test"]);
 
 function walkCode(dir) {
@@ -27,7 +27,7 @@ function walkCode(dir) {
 const acTokens = (s) => new Set(s.match(/AC-\d+/g) || []);
 
 const specsDir = join(ROOT, "specs");
-if (!existsSync(specsDir)) { console.log("Sem specs/ — nada a avaliar."); process.exit(0); }
+if (!existsSync(specsDir)) { console.log("Sem specs/ â€” nada a avaliar."); process.exit(0); }
 
 let codeBlob = "";
 try { for (const f of walkCode(ROOT)) codeBlob += "\n" + readFileSync(f, "utf8"); } catch {}
@@ -49,17 +49,20 @@ for (const name of readdirSync(specsDir)) {
   rows.push({ name, acs, byTask: acs.length - uncovered.length, byTest: acs.length - noTest.length, uncovered, noTest });
 }
 
-console.log("\nEval de fidelidade spec→implementação\n");
+console.log("\nEval de fidelidade specâ†’implementaÃ§Ã£o\n");
 for (const r of rows) {
   console.log(`  ${r.name}`);
-  console.log(`    AC: ${r.acs.length} · por task: ${r.byTask}/${r.acs.length} · em código/teste: ${r.byTest}/${r.acs.length}`);
-  if (r.uncovered.length) console.log(`    ✗ AC sem task (rastreabilidade): ${r.uncovered.join(", ")}`);
-  if (r.noTest.length) console.log(`    ⚠ AC sem referência em teste: ${r.noTest.join(", ")}`);
+  console.log(`    AC: ${r.acs.length} Â· por task: ${r.byTask}/${r.acs.length} Â· em cÃ³digo/teste: ${r.byTest}/${r.acs.length}`);
+  if (r.uncovered.length) console.log(`    âœ— AC sem task (rastreabilidade): ${r.uncovered.join(", ")}`);
+  if (r.noTest.length) console.log(`    âš  AC sem referÃªncia em teste: ${r.noTest.join(", ")}`);
 }
-console.log(`\n  SPEC_DEVIATION abertos no código: ${deviations}`);
+console.log(`\n  SPEC_DEVIATION abertos no cÃ³digo: ${deviations}`);
 
 if (hardFail) {
-  console.error(`\n✗ ${hardFail} AC sem cobertura de task — rastreabilidade quebrada.\n`);
+  console.error(`\nâœ— ${hardFail} AC sem cobertura de task â€” rastreabilidade quebrada.\n`);
   process.exit(1);
 }
-console.log(`\n✓ Rastreabilidade spec→task OK (referência em teste é aviso até implementar).\n`);
+console.log(`\nâœ“ Rastreabilidade specâ†’task OK (referÃªncia em teste Ã© aviso atÃ© implementar).\n`);
+
+
+
