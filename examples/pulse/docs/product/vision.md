@@ -1,10 +1,10 @@
 ---
 name: vision
-description: Visão do produto Pulse (exemplo golden).
+description: Visão do produto Pulse (exemplo dourado).
 alwaysApply: true
 ---
 
-# Visão — Pulse
+# Visão - Pulse
 
 ## Elevator pitch
 Para **times de produto** que precisam de **feedback in-app sem fricção**, o **Pulse** é um
@@ -12,10 +12,10 @@ Para **times de produto** que precisam de **feedback in-app sem fricção**, o *
 formulários externos, ele captura o sinal onde a experiência acontece.
 
 ## O produto É / NÃO É
-| É                          | NÃO É                        |
-|----------------------------|------------------------------|
-| widget leve embutível      | suíte de analytics           |
-| coleta contextual          | ferramenta de moderação      |
+| É                     | NÃO É                     |
+|-----------------------|---------------------------|
+| widget leve embutível | suíte de analytics        |
+| coleta contextual     | ferramenta de moderação   |
 
 ## Personas
 - **PM** — quer sinal qualitativo sem montar pesquisa.

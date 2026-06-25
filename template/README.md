@@ -1,17 +1,17 @@
-﻿# CodeAgent
+# CodeAgent
 
-Spec-Driven Development para qualquer agente de codificação ou IDE.
+Desenvolvimento guiado por especificação para qualquer agente de codificação ou IDE.
 
 ## O que entrega
 
 - `AGENTS.md` como arquivo canônico de instruções do projeto
 - `skills/` com fluxos reutilizáveis
-- docs de produto, arquitetura, engenharia e specs
-- portões de qualidade e continuidade entre sessões
+- documentação de produto, arquitetura, engenharia e specs
+- critérios de qualidade e continuidade entre sessões
 
 ## Regra central
 
-`spec.md` é o contrato, o código implementa, os testes verificam e as ADRs registram decisões duráveis.
+`spec.md` é o contrato; o código implementa, os testes verificam e as ADRs registram decisões duráveis.
 
 ## Padrão operacional
 

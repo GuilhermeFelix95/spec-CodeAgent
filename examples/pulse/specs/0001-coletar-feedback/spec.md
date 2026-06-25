@@ -1,10 +1,10 @@
 ---
 name: spec
-description: Spec — Coletar feedback (exemplo golden). Base enquanto a feature está ativa.
+description: Spec - Coletar feedback (exemplo dourado). Base enquanto a feature está ativa.
 alwaysApply: true
 ---
 
-# Spec — Coletar feedback
+# Spec - Coletar feedback
 
 ## Resumo
 O widget envia um feedback (texto + contexto) e o sistema o armazena, devolvendo um id.

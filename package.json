@@ -1,7 +1,7 @@
 {
   "name": "@igoruehara/spec-driven",
   "version": "0.1.9",
-  "description": "CodeAgent para agentes de IA (Codex, Cursor, Copilot, Gemini, Windsurf) - Lean Inception + DDD + Technical Design Docs, com skills, templates e portões de qualidade. Use via npx em qualquer projeto.",
+  "description": "CodeAgent para agentes de IA (Codex, Cursor, Copilot, Gemini, Windsurf) - Lean Inception + DDD + documentos de design técnico, com skills, templates e portões de qualidade. Use via npx em qualquer projeto.",
   "type": "module",
   "bin": {
     "spec-driven": "bin/cli.mjs"
