@@ -1,4 +1,4 @@
-﻿---
+---
 name: observability
 description: Use para logs, mÃ©tricas, tracing, alertas e SLOs operacionais.
 ---

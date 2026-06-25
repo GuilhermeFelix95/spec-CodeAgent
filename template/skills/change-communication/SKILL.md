@@ -1,4 +1,4 @@
-﻿---
+---
 name: change-communication
 description: Use to explain changes, risks, rollout plans, and follow-up work to teammates or reviewers.
 ---

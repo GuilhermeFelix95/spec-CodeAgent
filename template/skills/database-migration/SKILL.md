@@ -1,4 +1,4 @@
-﻿---
+---
 name: database-migration
 description: Use para mudanÃ§as de schema, migraÃ§Ã£o, Ã­ndices, queries e persistÃªncia.
 ---

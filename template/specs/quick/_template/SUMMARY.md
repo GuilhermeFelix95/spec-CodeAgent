@@ -1,4 +1,4 @@
-﻿---
+---
 name: quick-summary
 description: Resumo de uma quick task concluÃ­da.
 alwaysApply: false

@@ -1,4 +1,4 @@
-﻿---
+---
 name: stakeholders
 description: Mapa de stakeholders â€” quem influencia ou Ã© impactado pelo produto. Puxe ao priorizar, alinhar ou comunicar decisÃµes.
 alwaysApply: false

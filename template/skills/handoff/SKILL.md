@@ -1,4 +1,4 @@
-﻿---
+---
 name: handoff
 description: Use ao PAUSAR/encerrar uma sessÃ£o de trabalho (grava o estado atual em docs/STATE.md para retomar depois) ou ao RETOMAR (lÃª docs/STATE.md e a spec ativa e recompÃµe o contexto, propondo o prÃ³ximo passo). MantÃ©m a continuidade entre sessÃµes de humanos e agentes. Acione com /handoff.
 ---

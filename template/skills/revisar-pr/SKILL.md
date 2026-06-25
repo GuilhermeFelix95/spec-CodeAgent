@@ -1,4 +1,4 @@
-﻿---
+---
 name: revisar-pr
 description: Use para revisar um PR/MR no padrão SDD - verifica conformidade de processo: spec aprovada para a mudança, cada AC-N com teste verde, nenhum SPEC_DEVIATION aberto, ADRs para decisões irreversíveis, glossário/context-map atualizados e DoD cumprido. Posta o resultado como comentário no PR/MR via GitHub/GitLab MCP (se conectado). Complementa o /code-review do harness (que caça bugs). Acione com /revisar-pr.
 ---

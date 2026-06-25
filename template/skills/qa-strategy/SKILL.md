@@ -1,4 +1,4 @@
-﻿---
+---
 name: qa-strategy
 description: Use para plano de qualidade, critÃ©rios de aceite, matrizes de teste e cobertura.
 ---

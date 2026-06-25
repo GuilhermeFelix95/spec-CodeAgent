@@ -1,4 +1,4 @@
-﻿---
+---
 name: context-map
 description: Bounded contexts e relaÃ§Ãµes. Puxe ao modelar ou cruzar contextos.
 alwaysApply: false

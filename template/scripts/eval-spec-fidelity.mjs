@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 // Eval de fidelidade specâ†’implementaÃ§Ã£o.
 // Para cada specs/NNNN-*/: extrai os AC da spec, checa cobertura por task (tasks.md) e
 // referÃªncia em cÃ³digo/teste (token AC-N), e conta SPEC_DEVIATION abertos.

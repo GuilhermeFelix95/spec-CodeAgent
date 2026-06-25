@@ -1,4 +1,4 @@
-﻿---
+---
 name: STATE
 description: MemÃ³ria de trabalho volÃ¡til â€” onde paramos, prÃ³ximo passo, bloqueios.
 alwaysApply: true

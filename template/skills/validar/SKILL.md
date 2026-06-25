@@ -1,4 +1,4 @@
-﻿---
+---
 name: validar
 description: Use após implementar uma feature para validá-la (UAT) - roda os gates de docs/engineering/TESTING.md, mapeia cada AC-N ao seu teste e aponta ACs sem cobertura, resolve SPEC_DEVIATION pendente, checa o Definition of Done e atualiza docs/STATE.md. Acione com /validar.
 ---

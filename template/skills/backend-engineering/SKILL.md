@@ -1,4 +1,4 @@
-﻿---
+---
 name: backend-engineering
 description: Use para APIs, serviÃ§os, filas, jobs, integraÃ§Ã£o entre mÃ³dulos e regras de domÃ­nio no backend.
 ---

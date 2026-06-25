@@ -1,4 +1,4 @@
-﻿---
+---
 name: nova-feature
 description: Use para abrir uma nova feature no padrÃ£o SDD. Decide o tier (trivial/pequeno/arquitetural), cria specs/NNNN-<nome>/ com os templates certos, conduz o preenchimento de cima pra baixo pelos gates (product â†’ design â†’ domain â†’ spec â†’ tasks) e, quando hÃ¡ MCP conectado, importa a story do Jira no inÃ­cio e cria as issues na quebra de tasks. Acione com /nova-feature.
 ---

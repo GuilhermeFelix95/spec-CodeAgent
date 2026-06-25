@@ -1,4 +1,4 @@
-﻿---
+---
 name: clarificar
 description: Use para uma SABATINA â€” entrevista implacÃ¡vel que transforma intenÃ§Ã£o difusa em entendimento compartilhado antes de construir. Caminha pela Ã¡rvore de decisÃ£o UMA pergunta por vez, resolvendo dependÃªncias entre escolhas, sempre com uma resposta recomendada; explora o codebase/docs em vez de perguntar quando a resposta jÃ¡ existe. Ideal no gate da spec (AC testÃ¡veis / Definition of Ready) e do design (decisÃ£o difÃ­cil de reverter). Produz um resumo de entendimento que alimenta product.md/design.md/spec.md. Chamada por /nova-feature, /kickoff, /roadmap e /validar, ou acione direto com /clarificar.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: api-design
 description: Use para desenhar ou revisar contratos de API, payloads, compatibilidade e versionamento.
 ---

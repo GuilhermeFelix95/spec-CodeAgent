@@ -1,4 +1,4 @@
-﻿---
+---
 name: quick-task
 description: Trilha leve (tier trivial). Use para tarefa pequena com rastro.
 alwaysApply: false

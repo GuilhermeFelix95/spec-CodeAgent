@@ -1,4 +1,4 @@
-﻿---
+---
 name: mapear
 description: Use para mapear um codebase existente (brownfield) e produzir docs/architecture/assessment.md â€” stack, arquitetura, bounded contexts implÃ­citos, maturidade nos 5 eixos, dÃ­vidas/riscos e decisÃµes histÃ³ricas a virar ADR retroativo. Re-execuÃ§Ã£o atualiza o assessment. Ã‰ chamada pelo /kickoff no modo brownfield, e tambÃ©m roda sozinha quando o codebase mudar ou para analisar um repo. Acione com /mapear.
 ---

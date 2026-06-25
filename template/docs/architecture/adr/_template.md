@@ -1,4 +1,4 @@
-﻿---
+---
 name: adr-template
 description: Template de ADR. Use ao registrar uma decisÃ£o difÃ­cil de reverter.
 alwaysApply: false

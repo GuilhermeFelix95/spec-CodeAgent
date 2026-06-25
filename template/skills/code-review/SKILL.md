@@ -1,4 +1,4 @@
-﻿---
+---
 name: code-review
 description: Use para revisar diffs com foco em bugs, regressÃµes, seguranÃ§a, manutenÃ§Ã£o e testes.
 ---

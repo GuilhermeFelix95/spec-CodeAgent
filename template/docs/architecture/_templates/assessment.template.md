@@ -1,4 +1,4 @@
-﻿---
+---
 name: assessment
 description: Retrato as-is (brownfield). Puxe ao mapear ou avaliar o codebase.
 alwaysApply: false

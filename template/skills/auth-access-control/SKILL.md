@@ -1,4 +1,4 @@
-﻿---
+---
 name: auth-access-control
 description: Use to design login, sessions, roles, permissions, authorization, and protected resources.
 ---

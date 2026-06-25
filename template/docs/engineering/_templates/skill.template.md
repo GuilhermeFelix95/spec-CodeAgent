@@ -1,4 +1,4 @@
-﻿---
+---
 name: <nome-da-skill>
 description: <quando usar, em terceira pessoa, com gatilhos claros. Ex.: "Use para abrir uma nova feature no padrÃ£o SDD, escolhendo o tier e copiando os templates." Acione com /<nome>.>
 ---

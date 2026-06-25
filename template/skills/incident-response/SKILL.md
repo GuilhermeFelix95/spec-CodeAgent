@@ -1,4 +1,4 @@
-﻿---
+---
 name: incident-response
 description: Use para triagem de incidentes, severidade, mitigaÃ§Ã£o e comunicaÃ§Ã£o tÃ©cnica.
 ---

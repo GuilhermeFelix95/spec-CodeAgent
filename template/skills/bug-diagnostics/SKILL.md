@@ -1,4 +1,4 @@
-﻿---
+---
 name: bug-diagnostics
 description: Use para investigar bugs, regressÃµes, crashes, comportamento inesperado e logs confusos.
 ---

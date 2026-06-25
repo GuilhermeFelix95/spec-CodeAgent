@@ -1,4 +1,4 @@
-﻿---
+---
 name: git
 description: Use to manage branches, commits, diffs, history, merges, and safe local repository work.
 ---

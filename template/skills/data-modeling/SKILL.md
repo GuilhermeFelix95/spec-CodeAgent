@@ -1,4 +1,4 @@
-﻿---
+---
 name: data-modeling
 description: Use to model entities, relationships, cardinality, normalization, and persistence trade-offs.
 ---

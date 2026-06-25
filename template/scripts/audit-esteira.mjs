@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 // Auditoria da esteira SDD: valida estrutura, frontmatter, links e specs.
 // Uso: node scripts/audit-esteira.mjs [dir]   (default: ".")
 // Sai com cÃ³digo 1 se houver violaÃ§Ã£o.

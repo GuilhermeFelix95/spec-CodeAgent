@@ -1,4 +1,4 @@
-﻿---
+---
 name: release-readiness
 description: Use para preparar release, rollout, checklist de corte e mitigaÃ§Ã£o de risco.
 ---

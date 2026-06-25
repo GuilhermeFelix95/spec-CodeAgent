@@ -1,4 +1,4 @@
-﻿---
+---
 name: roadmap
 description: Prioridades atuais em horizontes Now/Next/Later.
 alwaysApply: true

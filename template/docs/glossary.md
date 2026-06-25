@@ -1,4 +1,4 @@
-﻿---
+---
 name: glossary
 description: Linguagem ubÃ­qua. Puxe ao nomear, modelar domÃ­nio ou escrever specs.
 alwaysApply: false

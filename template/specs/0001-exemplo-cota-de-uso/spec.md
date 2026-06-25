@@ -1,4 +1,4 @@
-﻿---
+---
 name: spec
 description: Contrato da feature (critÃ©rios de aceite). Base enquanto a feature estÃ¡ ativa.
 alwaysApply: true

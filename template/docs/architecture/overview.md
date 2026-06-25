@@ -1,4 +1,4 @@
-﻿---
+---
 name: architecture-overview
 description: Arquitetura do sistema nos 5 eixos + seguranÃ§a e operacional. Puxe ao trabalhar em arquitetura, infra, qualidade, observabilidade ou seguranÃ§a.
 alwaysApply: false

@@ -1,4 +1,4 @@
-﻿---
+---
 name: mvp-canvas
 description: Canvas do MVP. Puxe na descoberta e priorizaÃ§Ã£o do MVP.
 alwaysApply: false

@@ -1,4 +1,4 @@
-﻿---
+---
 name: design
 description: Technical Design Doc â€” 5 eixos + tabelas de dependÃªncias, soluÃ§Ã£o, riscos e roadmap, com links ao repo de artefatos do time. Puxe ao desenhar feature arquitetural.
 alwaysApply: false

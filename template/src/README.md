@@ -1,4 +1,4 @@
-﻿---
+---
 name: src
 description: Regra de camadas DDD. Puxe ao estruturar ou implementar cÃ³digo.
 alwaysApply: false

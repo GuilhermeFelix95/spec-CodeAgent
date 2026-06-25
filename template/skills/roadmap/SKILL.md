@@ -1,4 +1,4 @@
-﻿---
+---
 name: roadmap
 description: Use para construir ou atualizar docs/product/roadmap.md em horizontes Now/Next/Later, com valor, esforÃ§o, dono e dependÃªncias, priorizando quick wins de baixo risco. No brownfield inclui a adoÃ§Ã£o incremental do SDD. Pensado para revisar com o time a cada ciclo. Ã‰ chamada pelo /kickoff e tambÃ©m roda sozinha periodicamente. Acione com /roadmap.
 ---

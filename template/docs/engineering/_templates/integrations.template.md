@@ -1,4 +1,4 @@
-﻿---
+---
 name: integrations
 description: Ferramentas do time e MCPs. Puxe ao integrar Jira/Confluence/cloud.
 alwaysApply: false

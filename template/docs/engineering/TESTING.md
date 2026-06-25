@@ -1,4 +1,4 @@
-﻿---
+---
 name: TESTING
 description: Comandos de gate e convenÃ§Ãµes de teste. Puxe ao codar, validar ou montar CI.
 alwaysApply: false

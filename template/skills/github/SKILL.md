@@ -1,4 +1,4 @@
-﻿---
+---
 name: github
 description: Use to work with GitHub repositories, issues, pull requests, reviews, checks, and metadata.
 ---

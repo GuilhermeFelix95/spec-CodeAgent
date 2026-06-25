@@ -1,4 +1,4 @@
-﻿---
+---
 name: architecture-review
 description: Use para revisar fronteiras, dependÃªncias, acoplamento e riscos estruturais antes de mudanÃ§as maiores.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: deployment-ops
 description: Use to plan rollout, rollback, environments, flags, cutover, and production changes.
 ---

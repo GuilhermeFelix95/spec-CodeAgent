@@ -1,16 +1,16 @@
 # Lista de verificação de release
 
-Passos para publicar `@igoruehara/spec-driven` no npm. O GitHub já está publicado;
+Passos para publicar `spec-codeagent` no npm. O GitHub já está publicado;
 isto cobre o npm e a tag de versão.
 
 ## 0. Pré-requisitos (uma vez)
-- [ ] Conta npm cujo **username é `igoruehara`** (o escopo `@igoruehara` precisa ser seu).
-      Se for outro nome, ajuste `name` no `package.json` para `@<seu-user>/spec-driven`.
+- [ ] Conta npm cujo **username é seu**.
+      Se quiser publicar com escopo, ajuste `name` no `package.json` para `@<seu-user>/spec-codeagent`.
 
 ## 1. Login e verificação
 ```bash
 npm login            # usuário, senha e OTP (2FA)
-npm whoami           # deve retornar: igoruehara
+npm whoami           # deve retornar: seu usuário npm
 ```
 
 ## 2. Conferir o que vai para o pacote
@@ -41,8 +41,8 @@ gh release create v$(node -p "require('./package.json').version") --generate-not
 
 ## 6. Confirmar
 ```bash
-npm view @igoruehara/spec-driven version
-npx @igoruehara/spec-driven --help   # ou rode em um diretório de teste
+npm view spec-codeagent version
+npx spec-codeagent --help   # ou rode em um diretório de teste
 ```
 
 ---
@@ -50,5 +50,5 @@ npx @igoruehara/spec-driven --help   # ou rode em um diretório de teste
 ## Sem npm (alternativa)
 O pacote roda direto do GitHub a qualquer momento:
 ```bash
-npx github:igoruehara/spec-driven
+npx github:GuilhermeFelix95/Spec-CodeAgent
 ```

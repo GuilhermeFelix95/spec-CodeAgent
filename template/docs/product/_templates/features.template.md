@@ -1,4 +1,4 @@
-﻿---
+---
 name: features
 description: InventÃ¡rio de funcionalidades classificadas e sequenciadas em ondas (MVP). Puxe ao priorizar o roadmap ou abrir features.
 alwaysApply: false

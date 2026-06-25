@@ -1,4 +1,4 @@
-﻿---
+---
 name: database-performance
 description: Use to optimize queries, indexes, latency, locks, and data access cost.
 ---

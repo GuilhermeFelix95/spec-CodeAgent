@@ -1,4 +1,4 @@
-﻿---
+---
 name: performance-scalability
 description: Use para otimizaÃ§Ã£o de latÃªncia, throughput, custo, memÃ³ria e crescimento de carga.
 ---

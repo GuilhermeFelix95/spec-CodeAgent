@@ -1,4 +1,4 @@
-﻿// Adapters de cliente de IA: materializam a base canÃ´nica `AGENTS.md`
+// Adapters de cliente de IA: materializam a base canÃ´nica `AGENTS.md`
 // para formatos especÃ­ficos de cada ferramenta.
 
 export function stripFrontmatter(text) {

@@ -1,4 +1,4 @@
-﻿---
+---
 name: metrics
 description: MÃ©tricas de entrega â€” Lead Time, Throughput, maturidade de Continuous Delivery/Deployment e qualidade de cÃ³digo (cobertura, anÃ¡lise estÃ¡tica). Puxe ao revisar o fluxo ou planejar. Atualizado por /metricas.
 alwaysApply: false

@@ -1,4 +1,4 @@
-﻿---
+---
 name: diagrams
 description: Diagramas de arquitetura de alto nÃ­vel (Mermaid). Puxe ao desenhar ou rever a arquitetura. Gerado por /diagramar.
 alwaysApply: false

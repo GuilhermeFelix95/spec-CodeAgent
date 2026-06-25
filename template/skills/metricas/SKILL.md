@@ -1,4 +1,4 @@
-﻿---
+---
 name: metricas
 description: Use para acompanhar mÃ©tricas de entrega/fluxo â€” Lead Time (tempo atÃ© produÃ§Ã£o) e Throughput (itens concluÃ­dos por ciclo) â€” a maturidade de Continuous Delivery vs Continuous Deployment, e a qualidade de cÃ³digo (cobertura e anÃ¡lise estÃ¡tica) como tendÃªncia rastreÃ¡vel. LÃª git/Jira/CI e os artefatos de qualidade quando hÃ¡ MCP conectado e atualiza docs/engineering/metrics.md. Acione com /metricas.
 ---

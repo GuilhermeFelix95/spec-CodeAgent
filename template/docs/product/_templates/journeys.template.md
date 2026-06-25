@@ -1,4 +1,4 @@
-﻿---
+---
 name: journeys
 description: Resumo das jornadas do produto â€” etapas que a persona percorre. Puxe ao desenhar features ou priorizar o MVP.
 alwaysApply: false

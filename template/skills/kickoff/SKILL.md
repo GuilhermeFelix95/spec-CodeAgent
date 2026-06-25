@@ -1,4 +1,4 @@
-﻿---
+---
 name: kickoff
 description: Use ao iniciar ou retomar um projeto. Primeiro descobre o modo â€” greenfield (começando do zero) ou brownfield (já rodando) â€” e roteia. Greenfield conduz uma entrevista Lean Inception (visão, personas, MVP). Brownfield mapeia o estado atual (as-is), identifica gaps vs o padrão SDD e captura decisões históricas. Os dois caminhos passam pelo kickoff técnico nos 5 eixos (tech stack, arquitetura, infra, qualidade, observabilidade), propõem a camada agêntica do projeto (rules, subagents, skills, workflows/CI) e convergem num roadmap incremental, gerando a constituição do projeto. As integrações com ferramentas do time (Jira, Confluence, MCPs) são uma skill separada (/integracoes) - rode antes para insumos read-first, ou depois. Acione com /kickoff.
 ---

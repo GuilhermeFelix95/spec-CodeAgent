@@ -1,4 +1,4 @@
-﻿---
+---
 name: product
 description: PRD-lite da feature (por quÃª e para quem). Puxe ao abrir feature arquitetural.
 alwaysApply: false

@@ -1,4 +1,4 @@
-﻿---
+---
 name: tasks
 description: DecomposiÃ§Ã£o e gates da feature. Puxe ao implementar.
 alwaysApply: false

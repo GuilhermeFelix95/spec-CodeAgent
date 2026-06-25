@@ -1,4 +1,4 @@
-﻿---
+---
 name: dependency-management
 description: Use para adicionar, substituir, revisar ou remover dependÃªncias de terceiros.
 ---

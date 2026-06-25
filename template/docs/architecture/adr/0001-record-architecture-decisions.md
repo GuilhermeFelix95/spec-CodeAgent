@@ -1,4 +1,4 @@
-﻿---
+---
 name: ADR-0001
 description: DecisÃ£o de usar ADRs. Puxe ao registrar ou rever decisÃµes.
 alwaysApply: false

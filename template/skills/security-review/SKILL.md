@@ -1,4 +1,4 @@
-﻿---
+---
 name: security-review
 description: Use para revisar superfÃ­cies de ataque, validaÃ§Ã£o, autorizaÃ§Ã£o e exposiÃ§Ã£o de dados.
 ---

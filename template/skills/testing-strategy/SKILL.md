@@ -1,4 +1,4 @@
-﻿---
+---
 name: testing-strategy
 description: Use para definir pirÃ¢mide de testes, casos crÃ­ticos, cobertura e estratÃ©gia de validaÃ§Ã£o.
 ---

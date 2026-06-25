@@ -1,4 +1,4 @@
-﻿---
+---
 name: evals
 description: Use para avaliar a fidelidade da implementaÃ§Ã£o Ã  spec â€” roda o eval que checa se cada AC-N Ã© coberto por task e referenciado em teste, conta SPEC_DEVIATION e reporta um score por feature. Acione com /evals.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: product-analytics
 description: Use to define events, funnels, product metrics, experiments, and business observability.
 ---

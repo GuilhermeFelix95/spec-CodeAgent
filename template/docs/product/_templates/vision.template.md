@@ -1,4 +1,4 @@
-﻿---
+---
 name: vision
 description: VisÃ£o do produto â€” problema, personas, North Star.
 alwaysApply: true

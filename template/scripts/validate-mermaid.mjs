@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 // Validador estrutural de blocos Mermaid em arquivos .md.
 // Zero-dep (nÃ£o renderiza): pega os erros que mais quebram o render e que o agente mais comete â€”
 //   â€¢ bloco vazio                              (fatal)

@@ -99,9 +99,9 @@ seu-projeto/
 ## Uso
 
 ```bash
-npx @igoruehara/spec-driven
-npx @igoruehara/spec-driven meu-projeto
-npx @igoruehara/spec-driven --agent=codex,cursor
+npx spec-codeagent
+npx spec-codeagent meu-projeto
+npx spec-codeagent --agent=codex,cursor
 ```
 
 ## Padrão de sessão

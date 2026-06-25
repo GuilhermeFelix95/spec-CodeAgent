@@ -1,4 +1,4 @@
-﻿---
+---
 name: pull-request
 description: Use to prepare, review, and finalize pull requests with clear scope and verification.
 ---

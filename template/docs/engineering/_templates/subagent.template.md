@@ -1,4 +1,4 @@
-﻿---
+---
 name: <nome-do-subagente>
 description: <quando o agente principal deve delegar a este subagente. Seja especÃ­fico nos gatilhos â€” Ã© isso que decide a invocaÃ§Ã£o. Ex.: "Use para validar uma spec.md antes de implementar.">
 # tools: Read, Grep, Glob        # opcional â€” omita para herdar todas as ferramentas

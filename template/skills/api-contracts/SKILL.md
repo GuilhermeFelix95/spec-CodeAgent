@@ -1,4 +1,4 @@
-﻿---
+---
 name: api-contracts
 description: Use to define HTTP contracts, payloads, errors, versioning, and compatibility.
 ---

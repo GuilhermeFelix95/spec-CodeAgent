@@ -1,4 +1,4 @@
-﻿---
+---
 name: frontend-engineering
 description: Use para UI, estado, acessibilidade, desempenho e fluxo de interaÃ§Ã£o no frontend.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: testing-e2e
 description: Use to validate critical user journeys, smoke tests, and end-to-end flows.
 ---

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 // Hook SessionStart â€” injeta o contexto base SDD (docs alwaysApply: true) no inÃ­cio da sessÃ£o.
 // O stdout deste script Ã© adicionado ao contexto do agent.
 // Roda a partir da raiz do projeto; lÃª sÃ³ o que existe (no kit cru, sÃ³ o STATE).

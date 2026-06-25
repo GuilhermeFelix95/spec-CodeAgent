@@ -1,4 +1,4 @@
-﻿---
+---
 name: setup-ci
 description: Use para criar ou ajustar a pipeline de CI/CD que materializa os gates SDD â€” lint, anÃ¡lise estÃ¡tica (type-check/complexidade/SAST), testes (unidade/integraÃ§Ã£o/aceite) e cobertura a partir de docs/engineering/TESTING.md, com cobertura e anÃ¡lise estÃ¡tica publicadas como artefatos, mais a regra "falha PR sem spec aprovada". Detecta GitHub Actions / GitLab CI / outro. Gera o arquivo sÃ³ com aprovaÃ§Ã£o. Acione com /setup-ci.
 ---

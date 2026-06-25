@@ -1,4 +1,4 @@
-﻿# Gate de conformidade da esteira SDD.
+# Gate de conformidade da esteira SDD.
 # Falha o PR se a estrutura violar o padrÃ£o (frontmatter, links, specs).
 # Complemente com os gates de teste/cobertura do seu pipeline (ver /setup-ci e docs/engineering/TESTING.md).
 name: esteira

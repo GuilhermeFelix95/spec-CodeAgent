@@ -1,4 +1,4 @@
-﻿---
+---
 name: diagramar
 description: Use no discovery para desenhar a arquitetura de ALTO NÃVEL em Mermaid â€” diagrama de contexto (C4 L1), containers (C4 L2) e o mapa de bounded contexts (DDD). LÃª vision, context-map, design e assessment, e gera/atualiza docs/architecture/diagrams.md. MantÃ©m alto nÃ­vel, sem detalhe de implementaÃ§Ã£o. Acione com /diagramar.
 ---

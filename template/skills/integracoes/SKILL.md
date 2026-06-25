@@ -1,4 +1,4 @@
-﻿---
+---
 name: integracoes
 description: Use para levantar as ferramentas do time (Jira, Confluence, Notion, GitHub, cloud, observabilidade), conectar os MCPs com segurança, puxar insumos de leitura e definir os fluxos de escrita (repo -> ferramenta). Gera docs/engineering/integrations.md e, se aprovado, .mcp.json, e registra os MCPs validados no roteamento (bloco "Ferramentas conectadas (MCP)" do AGENTS.md + skills tools-aware). Rode antes do /kickoff para alimentar os artefatos com dado real (read-first), ou depois, quando o ferramental ficar conhecido. Re-executável. Acione com /integracoes.
 ---

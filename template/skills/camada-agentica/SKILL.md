@@ -1,4 +1,4 @@
-﻿---
+---
 name: camada-agentica
 description: Use to define rules, agents, skills, hooks, and workflows that make the kit work for a specific stack or team process.
 ---

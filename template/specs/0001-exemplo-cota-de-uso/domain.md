@@ -1,4 +1,4 @@
-﻿---
+---
 name: domain
 description: Modelo DDD da feature. Puxe ao modelar agregados e linguagem.
 alwaysApply: false

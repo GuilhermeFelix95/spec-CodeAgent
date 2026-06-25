@@ -1,4 +1,4 @@
-﻿---
+---
 name: auditar
 description: Use para auditar a conformidade do kit SDD - roda o validador estrutural (frontmatter, links, specs) e checa o que exige julgamento (rastreabilidade AC->teste->commit, DoD, specs órfãs, docs vivas atualizadas). Reporta violações com o arquivo. Acione com /auditar.
 ---

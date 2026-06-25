@@ -1,4 +1,4 @@
-﻿---
+---
 name: i18n-localization
 description: Use to handle language, timezone, currency, regional formatting, and localized content.
 ---

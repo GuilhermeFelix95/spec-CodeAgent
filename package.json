@@ -1,5 +1,5 @@
 {
-  "name": "@igoruehara/spec-driven",
+  "name": "spec-codeagent",
   "version": "0.1.9",
   "description": "CodeAgent para agentes de IA (Codex, Cursor, Copilot, Gemini, Windsurf) - Lean Inception + DDD + documentos de design técnico, com skills, templates e portões de qualidade. Use via npx em qualquer projeto.",
   "type": "module",
@@ -27,16 +27,16 @@
     "windsurf",
     "agent-skills"
   ],
-  "author": "igoruehara",
+  "author": "Guilherme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igoruehara/spec-driven.git"
+    "url": "git+https://github.com/GuilhermeFelix95/Spec-CodeAgent.git"
   },
   "bugs": {
-    "url": "https://github.com/igoruehara/spec-driven/issues"
+    "url": "https://github.com/GuilhermeFelix95/Spec-CodeAgent/issues"
   },
-  "homepage": "https://github.com/igoruehara/spec-driven#readme",
+  "homepage": "https://github.com/GuilhermeFelix95/Spec-CodeAgent#readme",
   "publishConfig": {
     "access": "public"
   },

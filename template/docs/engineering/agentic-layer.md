@@ -1,4 +1,4 @@
-﻿---
+---
 name: agentic-layer
 description: Mapa de rules/agents/skills/workflows. Puxe ao evoluir a camada agÃªntica.
 alwaysApply: false
