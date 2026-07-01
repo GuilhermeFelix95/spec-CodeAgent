@@ -1,5 +1,7 @@
 # CodeAgent
 
+Spec do OpenCode para desenvolvimento guiado por especificacao em qualquer agente de codificacao ou IDE.
+
 Desenvolvimento guiado por especificação para qualquer agente de codificação ou IDE.
 
 ## O que entrega

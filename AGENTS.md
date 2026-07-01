@@ -107,6 +107,12 @@ Quando estiver em `plan`, reforce obrigatoriamente:
 - tratar seguranca, desempenho e qualidade como restricoes obrigatorias, nao negociaveis
 - garantir que todo codigo gerado seja facil de ler, com nomes claros, estrutura simples e intencao explicita
 - usar as skills e os MCPs disponiveis quando eles forem relevantes para a tarefa
+- depois de entender o pedido, validar o plano com este checklist:
+  - se o usuario acrescentar algo depois, isso continua escalavel?
+  - se o usuario mudar isso depois, a base continua segura e correta?
+  - isso vai poder ser reutilizado sem retrabalho desnecessario?
+  - existem falhas de seguranca no caminho proposto?
+  - a performance continua aceitavel com o uso esperado?
 
 Espere aprovacao quando a mudanca puder impactar arquitetura, seguranca, banco de dados, regras de negocio ou muitos arquivos.
 
